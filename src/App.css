@@ -1,16 +1,16 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  margin-bottom: 4rem;
 }
-
+p{
+  margin-top:1rem;
+}
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,16 +18,127 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.objective>p{
+  font-size: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
   }
-  to {
-    transform: rotate(360deg);
+  .doc{
+    display: flex;
+    justify-content: space-around;
   }
-}
+  .right-col{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 60%;
+  }
+  .objective{
+    margin-top: 1rem;
+  }
+  .left-col{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  .marg, .experience, .education, .Pro-rel-skills, .skills-port, .name, .contact, .objective, .skills,.left-col,.right-col{
+    margin-top:1rem;
+  }
+  .exp1{
+    margin-bottom: 1rem;
+  }
+  .name, .contact, .objective, .skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+  }
+  .name{
+    margin: 1rem;
+    line-height: 3.5rem;
+    border-top: 3px solid rgba(0, 185, 174, 1);
+    border-bottom: 3px solid rgba(0, 185, 174, 1);
+  }
+  .contact img{
+    margin: 1rem;
+    width: 25%;
+  }
+  .contact{
+    margin: 2rem;
+    border-bottom: 3px solid rgba(0, 185, 174, 1);
+    padding-bottom: 3rem;
+  }
+  .skills{
+    align-items: left;
+  }
+  .skills>h2{
+    border-bottom: 3px solid rgba(0, 185, 174, 1);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .skills>ul, ul{
+    list-style: none;
+    text-align: left;
+  }
+  .skills>ul>li{
+    line-height: 2rem;
+  }
+  .experience, .education, .Pro-rel-skills, .skills-port{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .experience>h3, .education>h3, .Pro-rel-skills>h3, .skills-port>h3{
+    margin-top: 1rem;
+  }
+  .experience>h2{
+    text-align: center;
+   
+  }
+  .experience-h1{
+    width: 100%;
+  border-top: 3px solid rgba(0, 185, 174, 1);
+  border-bottom: 3px solid rgba(0, 185, 174, 1);
+  text-align: center;
+  }
+  .col-right li{
+    margin-top: 1rem;
+  }
+  .experience-ul>li, .education-ul>li, .Pro-rel-skills-ul>li, .skills-port-ul>li{
+    margin:1rem 0;
+  }
+  .experience-h1>h2{
+    margin: 1rem 0;
+  }
+  .vid{
+    color:rgba(0, 185, 174, 1); 
+    font-weight: 700;
+    cursor: pointer;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    text-align: center;
+    border: 3px solid rgba(0, 185, 174, 1);
+    border-radius: 25px;
+    width:10rem;
+  }
+  .vid:hover{
+    text-decoration: underline;
+  }
+  vid:active{
+    color:rgba(0, 185, 174, 1); 
+  }
+  .skills-port{
+    display: flex;
+    flex-direction: row;
+  }
+  .skills-port>div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .skills-port-section{
+    margin: 0 4rem;
+  }
