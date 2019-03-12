@@ -1,0 +1,10 @@
+.part{
+animation: blink 2s linear infinite;
+}
+@keyframes blink{
+0%{opacity:.25;}
+25%{opacity: .5;}
+50%{opacity: 1;}
+75%{opacity: .5;}
+100%{opacity: .25;}
+}

@@ -1,44 +1,84 @@
 import React, { Component } from 'react';
 import './App.css';
+import HumanSvg from './components/HumanSvg';
 
 class App extends Component {
   constructor(){
     super()
     this.state={
       showAntotechwireframes:false,
+      showAntotechwireframestext:"Watch Video",
+      iosfinaltext:"Watch Video",
+      uiuxtext:"Watch Video",
+      cheopainText:"Try Demo",
       iosfinal:false,
-      uiux:false
+      uiux:false,
+      cheopain:false
+
     }
   }
   showGraphics=(ev)=>{
     this.setState({
       showAntotechwireframes:false,
       iosfinal:false,
-      uiux:false
+      uiux:false,
+      cheopain:false,
+      showAntotechwireframestext:"Watch Video",
+      iosfinaltext:"Watch Video",
+      uiuxtext:"Watch Video",
+      cheopainText:"Try Demo",
     })
     let show=ev.target.id
     switch(show){
       case "ios":
+      let original=this.state.iosfinaltext;
+      if(original==="Watch Video"){
+        original="Close";
+      }else if(original === "Close"){
+        original="Watch Video"
+      }
     this.setState({
-      iosfinal:!this.state.iosfinal
+      iosfinal:!this.state.iosfinal,
+      iosfinaltext:original,
     })
     break;
     case "antotech":
+    let origina=this.state.showAntotechwireframestext;
+      if(origina==="Watch Video"){
+        origina="Close";
+      }else if(origina === "Close"){
+        origina="Watch Video"
+      }
     this.setState({
-      showAntotechwireframes:!this.state.showAntotechwireframes
+      showAntotechwireframes:!this.state.showAntotechwireframes,
+      showAntotechwireframestext:origina
     })
     break;
     case "uiux":
+    let origin=this.state.uiuxtext;
+      if(origin==="Watch Video"){
+        origin="Close";
+      }else if(origin === "Close"){
+        origin="Watch Video"
+      }
     this.setState({
+      uiuxtext:origin,
       uiux:!this.state.uiux
     })
     break;
-    default:
+    case "cheopain":
+    let origi=this.state.cheopainText;
+      if(origi==="Try Demo"){
+        origi="Close";
+      }else if(origi === "Close"){
+        origi="Try Demo"
+      }
     this.setState({
-      showAntotechwireframes:false,
-      iosfinal:false
+      cheopain:!this.state.cheopain,
+      cheopainText:origi,
     })
-
+    break;
+    default:
   }
 
     console.log(this.state.showAntotechwireframes);
@@ -48,7 +88,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Mobile Application Developer</h1>
-          <h5>made with ReactJS</h5>
+          <h5>Made with ReactJS</h5>
           <div className="objective">
               <h6>Objective</h6>
               <p>To work in a company where there is constant learning and collaboration that values innovation, creativity and quality.</p>
@@ -58,16 +98,17 @@ class App extends Component {
           <div className="left-col">
             <div className="name"><h1>CESAR</h1><h1>GUERRERO</h1><h1>GARCIA</h1></div>
             <div className="contact">
-              <img alt="mail" src={require("./assets/mail.png")} />
+              <img alt="mail" src={require("./assets/mail.svg")} />
               <a href="mailto:mr.cesar.guerrero@gmail.com">mr.cesar.guerrero@gmail.com</a>
-              <img alt="mail" src={require('./assets/phone.png')} />
+              <img alt="mail" src={require('./assets/tel.svg')} />
               <a href="tel:+14389790112">(438)979-0112</a>
-              <img alt="mail" src={require('./assets/linkedin.png')} />
-              <a href="https://www.linkedin.com/in/devndesign/">https://www.linkedin.com/in/devndesign/</a>
+              <img alt="mail" src={require('./assets/linkedin.svg')} />
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/devndesign/">https://www.linkedin.com/in/devndesign/</a>
             </div>
             <div className="skills">
               <h2>Skills</h2>
               <ul>
+                <li>Innovative problem solving skills.</li>
                 <li>Strong social and interpersonal skills.</li>
                 <li>Goal oriented.</li>
                 <li>Leadership skills and initiative.</li>
@@ -115,8 +156,8 @@ class App extends Component {
               <ul className="Pro-rel-skills-ul">
                 <li><h3>Programming Languages</h3><p>Java, C#, C++.</p></li>
                 <li><h3>Operating Systems</h3><p>Windows, Linux, Mac OS.</p></li>
-                <li><h3>Web Based Languages, Frameworks and Libraries</h3><p>JavaScript, NodeJs, PHP, HTML5, CSS, XML, ReactJs, Cordova,
-    Express, Redux, Workbox, Mocha, Chai, JSON, Saas.
+                <li><h3>Web Based Languages, Frameworks and Libraries</h3><p> ReactJs,
+    Express, Redux, JavaScript, NodeJs, PHP, HTML5, CSS, XML, Cordova, Workbox, Mocha, Chai, JSON, Saas.
               </p></li>
                 <li><h3>Native Mobile</h3><p>React Native, Swift, Kotlin.</p></li>
                 <li><h3>Databases</h3><p>Firebase, MySql, MongoDB.</p></li>
@@ -132,10 +173,10 @@ class App extends Component {
               <h2>Skills Portfolio</h2>
         </div>
         <div className="skills-port">
-        <div className="">
-              <h3>React JS Website (Development in progress)</h3>
+        <div >
+              <h3>React JS Website <i>Development in progress</i></h3>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/reactAntoTechWebsite"><i>Code: </i>https://github.com/guer0157/reactAntoTechWebsite</a>
-              <a onClick={this.showGraphics} id="antotech" className="vid" href="#vid-antotech">watch video</a>
+              <a onClick={this.showGraphics} id="antotech" className="vid" href="#vid-antotech">{this.state.showAntotechwireframestext}</a>
               {this.state.showAntotechwireframes&&
               <video id="vid-antotech" width="90%" height="440" controls autoPlay>
               <source src={require("./assets/MyMovie.mp4")} type="video/mp4"/>
@@ -146,23 +187,9 @@ class App extends Component {
                 <li>Coded server-side to communicate with a mongoDB database.</li>
                 <li>Designed UI for the website with Adove XD <i>See Video</i></li>
               </ul>
-              <h3>Bootstrap Website</h3>
-              <a target="_blank" rel="noopener noreferrer" href="http://www.cerrajeriaAurrera.com">http://www.cerrajeriaAurrera.com</a>
-              <ul className="skills-port-ul">
-                <li>Developed a simple website with bootstrap for a freelance client.</li>
-                <li>Completed all parts of the development from design to deployment.</li>
-              </ul>
-              <h3>BottleWorks Website</h3>
-              <a target="_blank" rel="noopener noreferrer" href="http://bottleworks.ca">http://bottleworks.ca</a>
-              <ul className="skills-port-ul">
-                <li>Did all the JavaScript for the website.</li>
-                <li>Used Google Maps API. </li>
-              </ul>
-              </div>
-              <div>
               <h3>IOS Passport Application</h3>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/iosFinal">https://github.com/guer0157/iosFinal</a>
-              <a href="#uiux" onClick={this.showGraphics} id="ios" className="vid">watch video</a>
+              <a href="#uiux" onClick={this.showGraphics} id="ios" className="vid">{this.state.iosfinaltext}</a>
              
               {this.state.iosfinal&&
               <video width="300" height="600" controls autoPlay>
@@ -170,20 +197,47 @@ class App extends Component {
               </video>
               }
                <ul className="skills-port-ul">
-                <li>Used swift to develop a passport application.</li>
+                <li>Used Swift to develop a passport application to track trips.</li>
                 <li>Implemented URLSession and URLRequest to make calls to a JSON API for data.</li>
               </ul>
-              <h3>UI &amp; UX Design</h3>
-              <p onClick={this.showGraphics} id="uiux" className="vid">watch video</p>
+              
+              <h3>Bootstrap Website</h3>
+              <a target="_blank" rel="noopener noreferrer" href="http://www.cerrajeriaAurrera.com">http://www.cerrajeriaAurrera.com</a>
               <ul className="skills-port-ul">
-                <li>Used swift to develop a passport application.</li>
-                <li>Implemented URLSession and URLRequest to make calls to a JSON API for data.</li>
+                <li>Developed a simple website with bootstrap for a freelance client.</li>
+                <li>Completed all parts of the development from design to deployment.</li>
+              </ul>
+              </div>
+              <div>
+              <h3>React JS Web App for CHEO <i>Development in progress</i></h3>
+              <a target="_blank" rel="noopener noreferrer" href="#cheopain"><i>Code: Hosted in private repository </i>Unavailable</a>
+              <a onClick={this.showGraphics} id="cheopain" className="vid" href="#vid-cheopain">{this.state.cheopainText}</a>
+              {this.state.cheopain&&
+              <HumanSvg/>
+              }
+              <ul  className="skills-port-ul">
+                <li>Web app built for the Childrens Hospital of Eastern Ontario (CHEO).</li>
+                <li>Developed and designed the web app including the svgs with React JS and Adobe Illustrator</li>
+                <li>Used svgs to interactively represent pain points <i>Try demo above</i></li>
+              </ul>
+              <h3>UI &amp; UX Design</h3>
+              <p onClick={this.showGraphics} id="uiux" className="vid">{this.state.uiuxtext}</p>
+              <ul className="skills-port-ul">
+                <li>Used Adobe XD to design an interactive visual mock-up.</li>
+                <li>Followed Android UI guidelines.</li>
+                <li>Followed user-centric design - Research, Prototype, Design, to create intutive UI</li>
               </ul>
               {this.state.uiux&&
               <video width="300" height="600" controls autoPlay>
               <source src={require("./assets/uiux.mov")} type="video/mp4"/>
               </video>
               }
+              <h3>BottleWorks Website</h3>
+              <a target="_blank" rel="noopener noreferrer" href="http://bottleworks.ca">http://bottleworks.ca</a>
+              <ul className="skills-port-ul">
+                <li>Did all the JavaScript for the website.</li>
+                <li>Used Google Maps API. </li>
+              </ul>
               </div>
             </div>
           </div>
