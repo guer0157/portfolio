@@ -173,12 +173,12 @@ class App extends Component {
               <h2>Skills Portfolio</h2>
         </div>
         <div className="skills-port">
-        <div >
+        <div id="col-left-portfolio">
               <h3>React JS Website <i>Development in progress</i></h3>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/reactAntoTechWebsite"><i>Code: </i>https://github.com/guer0157/reactAntoTechWebsite</a>
+              <a id="antotechweb" target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/reactAntoTechWebsite"><i>Code: </i>https://github.com/guer0157/reactAntoTechWebsite</a>
               <a onClick={this.showGraphics} id="antotech" className="vid" href="#vid-antotech">{this.state.showAntotechwireframestext}</a>
               {this.state.showAntotechwireframes&&
-              <video id="vid-antotech" width="90%" height="440" controls autoPlay>
+              <video id="vid-antotech" width="90%"  controls autoPlay>
               <source src={require("./assets/MyMovie.mp4")} type="video/mp4"/>
               </video>
               }
@@ -188,8 +188,8 @@ class App extends Component {
                 <li>Designed UI for the website with Adove XD <i>See Video</i></li>
               </ul>
               <h3>IOS Passport Application</h3>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/iosFinal">https://github.com/guer0157/iosFinal</a>
-              <a href="#uiux" onClick={this.showGraphics} id="ios" className="vid">{this.state.iosfinaltext}</a>
+              <a id="ios" target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/iosFinal">https://github.com/guer0157/iosFinal</a>
+              <a href="#ios" onClick={this.showGraphics} id="ios" className="vid">{this.state.iosfinaltext}</a>
              
               {this.state.iosfinal&&
               <video width="300" height="600" controls autoPlay>
@@ -222,16 +222,17 @@ class App extends Component {
               </ul>
               <h3>UI &amp; UX Design</h3>
               <p onClick={this.showGraphics} id="uiux" className="vid">{this.state.uiuxtext}</p>
-              <ul className="skills-port-ul">
-                <li>Used Adobe XD to design an interactive visual mock-up.</li>
-                <li>Followed Android UI guidelines.</li>
-                <li>Followed user-centric design - Research, Prototype, Design, to create intutive UI</li>
-              </ul>
               {this.state.uiux&&
               <video width="300" height="600" controls autoPlay>
               <source src={require("./assets/uiux.mov")} type="video/mp4"/>
               </video>
               }
+              <ul className="skills-port-ul">
+                <li>Used Adobe XD to design an interactive visual mock-up.</li>
+                <li>Followed Android UI guidelines.</li>
+                <li>Followed user-centric design - Research, Prototype, Design, to create intutive UI</li>
+              </ul>
+             
               <h3>BottleWorks Website</h3>
               <a target="_blank" rel="noopener noreferrer" href="http://bottleworks.ca">http://bottleworks.ca</a>
               <ul className="skills-port-ul">
