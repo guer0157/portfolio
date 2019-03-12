@@ -1,0 +1,19 @@
+{
+  "main.css": "/portfolio/static/css/main.3384a595.chunk.css",
+  "main.js": "/portfolio/static/js/main.daa46c9c.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.daa46c9c.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.784d01ab.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.784d01ab.js.map",
+  "static/js/2.aa7a0768.chunk.js": "/portfolio/static/js/2.aa7a0768.chunk.js",
+  "static/js/2.aa7a0768.chunk.js.map": "/portfolio/static/js/2.aa7a0768.chunk.js.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.b3e4130759a4967a4a373829bd573466.js": "/portfolio/precache-manifest.b3e4130759a4967a4a373829bd573466.js",
+  "service-worker.js": "/portfolio/service-worker.js",
+  "static/css/main.3384a595.chunk.css.map": "/portfolio/static/css/main.3384a595.chunk.css.map",
+  "static/media/MyMovie.mp4": "/portfolio/static/media/MyMovie.0e7cbb45.mp4",
+  "static/media/iosdevelopment.mov": "/portfolio/static/media/iosdevelopment.b37146e3.mov",
+  "static/media/linkedin.svg": "/portfolio/static/media/linkedin.de1216cc.svg",
+  "static/media/mail.svg": "/portfolio/static/media/mail.c86b59ba.svg",
+  "static/media/tel.svg": "/portfolio/static/media/tel.dca81bfb.svg",
+  "static/media/uiux.mov": "/portfolio/static/media/uiux.cfe83b5f.mov"
+}
