@@ -90,7 +90,7 @@ class App extends Component {
           <h1>Mobile Application Developer</h1>
           <h5>Made with ReactJS</h5>
           <div className="objective">
-              <h6>Objective</h6>
+              <h4>Objective</h4>
               <p>To work in a company where there is constant learning and collaboration that values innovation, creativity and quality.</p>
             </div>
         </header>
@@ -120,7 +120,7 @@ class App extends Component {
           </div>
           <div className="right-col">
             <div className="experience">
-            <div className="experience-h1 exp1">
+            <div className="exp">
               <h2>Experience</h2>
             </div>
               <h3>PROGRAM ASSISTANT/MOBILE APPLICATION DESIGN &amp; DEVELOPMENT - ALGONQUIN COLLEGE</h3>
@@ -131,7 +131,7 @@ class App extends Component {
               <p>Developed SLiDE, a brand new initiative at Algonquin College with an interdisciplinary team of students. Showed initiative and collaboration in every project developed by the SLiDE team, which focuses on providing digital technology for socially conscious organizations. Furthermore, I took a leadership role in the team and often organized and delegated tasks to my team mates in order to work efficiently.
             </p>
             </div>
-            <div className="experience-h1 marg">
+            <div className="experience-h1-ed experience-h1 marg">
               <h2>Education</h2>
               </div>
           <div className="education">
@@ -149,7 +149,7 @@ class App extends Component {
                 <li>Learned how to deploy a fully working database application.</li>
               </ul>
             </div>
-            <div className="experience-h1 marg">
+            <div className="experience-h1 experience-h1-ed marg">
               <h2>Program-related Skills</h2>
               </div>
             <div className="Pro-rel-skills">
@@ -169,23 +169,23 @@ class App extends Component {
           </div>
         </div>
         <div className="skills-port-section">
-        <div className="experience-h1 marg">
+        <div className="exp">
               <h2>Skills Portfolio</h2>
         </div>
         <div className="skills-port">
         <div id="col-left-portfolio">
               <h3>React JS Website <i>Development in progress</i></h3>
-              <a id="antotechweb" target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/reactAntoTechWebsite"><i>Code: </i>https://github.com/guer0157/reactAntoTechWebsite</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/reactAntoTechWebsite"><i>Code: </i>https://github.com/guer0157/reactAntoTechWebsite</a>
               <a onClick={this.showGraphics} id="antotech" className="vid" href="#vid-antotech">{this.state.showAntotechwireframestext}</a>
               {this.state.showAntotechwireframes&&
               <video id="vid-antotech" width="90%"  controls autoPlay>
-              <source src={require("./assets/MyMovie.mp4")} type="video/mp4"/>
+              <source id="antotechweb" src={require("./assets/MyMovie.mp4")} type="video/mp4"/>
               </video>
               }
               <ul  className="skills-port-ul">
-                <li>Implementing react, react-routed-dom, reactstrap and react-redux to create a website.</li>
-                <li>Coded server-side to communicate with a mongoDB database.</li>
-                <li>Designed UI for the website with Adove XD <i>See Video</i></li>
+                <li>Implementing react, react-router-dom, reactstrap and react-redux to create a website.</li>
+                <li>Coded server-side with Express to communicate with a MongoDB database.</li>
+                <li>Designed UI mock-up for the website with Adove XD <i>See Video</i></li>
               </ul>
               <h3>IOS Passport Application</h3>
               <a id="ios" target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/iosFinal">https://github.com/guer0157/iosFinal</a>

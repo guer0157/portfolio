@@ -21,6 +21,7 @@ p{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding:2rem 1rem;
 }
 .App-header>h1{
 text-align: center;
@@ -54,7 +55,7 @@ text-align: center;
     margin-top:1rem;
   }
   .exp1{
-    margin-bottom: 1rem;
+    margin:0 0 1rem 0; 
   }
   .name, .contact, .objective, .skills{
     display: flex;
@@ -105,13 +106,14 @@ text-align: center;
     text-align: center;
    
   }
+  .experience-h1-ed{
+    margin: 0 1rem;
+  }
   .experience-h1{
   width: 90%;
   border-top: 3px solid rgba(0, 185, 174, 1);
   border-bottom: 3px solid rgba(0, 185, 174, 1);
   text-align: center;
-  margin: 0 1rem;
-
   }
   #col-left-portfolio{
     word-wrap: break-word;
@@ -139,7 +141,7 @@ text-align: center;
     width:10rem;
   }
   #vid-antotech{
-    width: 100%;;
+    width: 100%;
   }
   .vid:hover{
     text-decoration: underline;
@@ -226,16 +228,27 @@ text-align: center;
     color: white;
     line-height: 27px;
   }
+  .exp{
+  border-top: 3px solid rgba(0, 185, 174, 1);
+  border-bottom: 3px solid rgba(0, 185, 174, 1);
+  text-align: center;
+  padding: 1rem 0;
+  }
+  #Hips, #Jaw{
+    padding:3px;
+  }
   @media only screen and (min-width: 600px) {
     .objective>p{
       font-size: 1rem;
     }
+   
       code {
         font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
           monospace;
       }
       .doc{
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
       }
       .right-col{
@@ -263,6 +276,9 @@ text-align: center;
         flex-direction: column;
         align-items: center;
         text-align:center;
+      }
+      #vid-antotech{
+        width: 90%;
       }
       .name{
         margin: 1rem;
@@ -391,14 +407,17 @@ text-align: center;
         
       }
       .bParts-single{
-        height: 40%;
+        height: 15%;
         background-color:  rgba(0, 185, 174, 1);
-        margin-bottom: 3px;
+        margin: 3px;
         vertical-align: center;
         border-radius: 5px;
         cursor: pointer;
         color: white;
         width:40%;
+      }
+      .bParts-single:hover{
+        background-color:  rgb(1, 133, 124);
       }
       .bParts{
         padding: 0;
@@ -410,5 +429,8 @@ text-align: center;
         cursor: pointer;
         color: white;
         line-height: 27px;
+      }
+      .bParts:hover{
+        background-color:  rgb(1, 133, 124);
       }
   }
