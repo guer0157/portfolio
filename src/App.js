@@ -141,7 +141,7 @@ class App extends Component {
               <p>Help students grasp the concepts of vanilla JavaScript, NodeJs and Object Oriented languages as well as hosting open labs for first and second semester students to help them with assignments and code debugging.</p>
               <h3>IBM-SLIDE INTERN/ SOCIAL INNOVATION LAB - ALGONQUIN COLLEGE</h3>
               <i>May 2019 - Present</i>
-              <p>Developed SLiDE, a brand new initiative at Algonquin College with an interdisciplinary team of students. Showed initiative and collaboration in every project developed by the SLiDE team, which focuses on providing digital technology for socially conscious organizations. Furthermore, I took a leadership role in the team and often organized and delegated tasks to my team mates in order to work efficiently.
+              <p>Developed SLiDE, a brand new initiative at Algonquin College with an interdisciplinary team of students.As a team we developed SLiDS's website using HTML, CSS, and JavaScript - I was personally in charge of the JavaScript development. Showed initiative and collaboration in every project developed by the SLiDE team, which focuses on providing digital technology for socially conscious organizations. Furthermore, I took a leadership role in the team and often organized and delegated tasks to my team mates in order to work efficiently. Some of the organizations and porjects undertaken at SLiDE include: Website using HTML,CSS,JavaScript for BottleWorks and a Web App built in React JS for CHEO <a href="col-left-portfolio">Click here to see demos</a>
             </p>
             </div>
             <div className="experience-h1-ed experience-h1 marg">
