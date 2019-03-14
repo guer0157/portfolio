@@ -17,6 +17,18 @@ class App extends Component {
 
     }
   }
+  componentDidMount(){
+    let list=document.querySelectorAll('.skills-animation');
+    console.log(list)
+    setInterval(()=>{
+      for(let i=0;list.length<i;i++){
+        list[i].classList.add("activate")
+        setTimeout(()=>{
+          list[i].classList.remove("activate");
+        }, 1000)
+      }
+     },8000);
+  }
   showGraphics=(ev)=>{
     this.setState({
       showAntotechwireframes:false,
@@ -108,13 +120,13 @@ class App extends Component {
             <div className="skills">
               <h2>Skills</h2>
               <ul>
-                <li>Innovative problem solving skills.</li>
-                <li>Strong social and interpersonal skills.</li>
-                <li>Goal oriented.</li>
-                <li>Leadership skills and initiative.</li>
-                <li>Attentive to detail and quality.</li>
-                <li>Ability to work with little supervision.</li>
-                <li>Strong collaboration skills.</li>
+                <li className="skills-animation">Innovative problem solving skills.</li>
+                <li className="skills-animation">Strong social and interpersonal skills.</li>
+                <li className="skills-animation">Goal oriented.</li>
+                <li className="skills-animation">Leadership skills and initiative.</li>
+                <li className="skills-animation">Attentive to detail and quality.</li>
+                <li className="skills-animation">Ability to work with little supervision.</li>
+                <li className="skills-animation">Strong collaboration skills.</li>
               </ul>
             </div>
           </div>
