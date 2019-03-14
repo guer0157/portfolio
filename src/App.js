@@ -98,7 +98,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <img alt="business card" src={require("./assets/frontb.png")}/>
+      
         <header className="App-header">
           <h1>Mobile Application Developer</h1>
           <h5>Made with ReactJS</h5>
@@ -108,6 +108,7 @@ class App extends Component {
             </div>
         </header>
         <div className="doc">
+        <img alt="business card" src={require("./assets/frontb.png")}/>
           <div className="left-col">
             <div className="name"><h1>CESAR</h1><h1>GUERRERO</h1><h1>GARCIA</h1></div>
             <div className="contact">
