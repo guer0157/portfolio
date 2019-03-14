@@ -108,7 +108,6 @@ class App extends Component {
             </div>
         </header>
         <div className="doc">
-        
           <div className="left-col">
             <div className="name"><h1>CESAR</h1><h1>GUERRERO</h1><h1>GARCIA</h1></div>
             <div className="contact">
