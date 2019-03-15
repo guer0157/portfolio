@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/uiux.cfe83b5f.mov"
   },
   {
-    "revision": "95ffe519fdc1c11d025f815fc2475518",
+    "revision": "6d3a62e0b3a75f5afb33b6b4e857918c",
     "url": "/portfolio/index.html"
   }
 ];
