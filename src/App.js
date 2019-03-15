@@ -148,7 +148,7 @@ class App extends Component {
               <h2>Education</h2>
               </div>
           <div className="education">
-              <h3>MOBILE APPLICATION DESING &amp; DEVELOPMENT</h3>
+              <h3>MOBILE APPLICATION DESIGN &amp; DEVELOPMENT</h3>
               <p>Algonquin College of Applied Arts and Technology</p>
               <p>Expected Graduate: Spring 2019.</p>
               <ul className="education-ul">
