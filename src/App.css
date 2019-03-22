@@ -431,7 +431,7 @@ text-align: center;
         line-height: 27px;
       }
       .activate{
-        transform: scale(2);
+        transform: scale(1.1);
       }
       .bParts:hover{
         background-color:  rgb(1, 133, 124);

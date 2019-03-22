@@ -13,21 +13,31 @@ class App extends Component {
       cheopainText:"Try Demo",
       iosfinal:false,
       uiux:false,
-      cheopain:false
+      cheopain:false,
+      listCount:0
 
     }
   }
   componentDidMount(){
     let list=document.querySelectorAll('.skills-animation');
+    let listCount=0
+    if(listCount>6)listCount=0
+
     console.log(list)
     setInterval(()=>{
-      for(let i=0;list.length<i;i++){
-        list[i].classList.add("activate")
+      list[this.state.listCount].classList.add("activate")
         setTimeout(()=>{
-          list[i].classList.remove("activate");
-        }, 1000)
-      }
-     },8000);
+          list[this.state.listCount].classList.remove("activate");
+          let listCountAdder=this.state.listCount
+      listCountAdder++
+      if(listCountAdder>6)listCountAdder=0
+        this.setState({
+          listCount:listCountAdder
+        })
+        }, 500)
+      
+      }, 1000)
+    //  },8000);
   }
   showGraphics=(ev)=>{
     this.setState({
