@@ -11,9 +11,11 @@ class App extends Component {
       iosfinaltext:"Watch Video",
       uiuxtext:"Watch Video",
       cheopainText:"Try Demo",
+      aceText:"Watch Video",
       iosfinal:false,
       uiux:false,
       cheopain:false,
+      ace:false,
       listCount:0
 
     }
@@ -45,10 +47,12 @@ class App extends Component {
       iosfinal:false,
       uiux:false,
       cheopain:false,
+      ace:false,
       showAntotechwireframestext:"Watch Video",
       iosfinaltext:"Watch Video",
       uiuxtext:"Watch Video",
       cheopainText:"Try Demo",
+      aceText:"Watch Video",
     })
     let show=ev.target.id
     switch(show){
@@ -62,6 +66,18 @@ class App extends Component {
     this.setState({
       iosfinal:!this.state.iosfinal,
       iosfinaltext:original,
+    })
+    break;
+    case "ace":
+      let orgnal=this.state.aceText;
+      if(orgnal==="Watch Video"){
+        orgnal="Close";
+      }else if(orgnal === "Close"){
+        orgnal="Watch Video"
+      }
+    this.setState({
+      ace:!this.state.ace,
+      aceText:orgnal,
     })
     break;
     case "antotech":
@@ -155,18 +171,46 @@ class App extends Component {
             </p>
             </div>
             <div className="experience-h1-ed experience-h1 marg">
+              <h2>MILESTONE PROJECTS</h2>
+              </div>
+          <div className="education">
+              <h3>REACT NATIVE APP FOR CBSA</h3>
+              <p className="miletone-left-para-600">Advanced Conveyance Examination (ACE) App for Canadian Boarder Services Agency (CBSA).</p>
+              <p className="miletone-left-para">The ACE app is currently being developed by myself and a team of 4 classmates as part of our final project for the Mobile Application Design &amp; Development program. It is designed to assist boarder officers at international ports find illegal contraband hidden inside of vehicles.</p>
+              <p className="miletone-left-para">My role within the app is development lead. I took an active role in developing the back-end API for the app with NodeJs, Express and MongoDB. Also, contributed largely on the front-end, as well as, integration of the front and back end.</p>
+              <p className="miletone-left-para-600">Features:</p>
+              <ul className="education-ul mileston">
+                <li>Searching vehicles by Make/Model/Year.</li>
+                <li>Finding hiding spots within that vehicle.</li>
+                <li>Seeing details about a hiding spot.</li>
+                <li>Adding hiding spots/vehicles.</li>
+                <li>Notifying boarder officers about new hiding spots added.</li>
+              </ul>
+              <h3>REACT JS WEB APP FOR CHEO</h3>
+              <p className="miletone-left-para-600">Juvenile Idiopathic Arthritis (JIA) OptionMap web app for Children's Hospital of Eastern Ontario (CHEO).</p>
+              <p className="miletone-left-para">I am currently doing all the development for the JIA OptionMap as part of my work at the social innovation lab. The app is designed to help youth with idiopathic arthritis find alternative treatments to manage their pain.</p>
+              <p className="miletone-left-para">As the sole developer I designed the algorithm that allows the app to show treatments based on the user's answers. I also followed the design provided by the client and created the interactive illustrations on the app with Adobe Illustrator. </p>
+              <p className="miletone-left-para-600">Features:</p>
+              <ul className="education-ul mileston">
+                <li>Interactive illustration of pain points.</li>
+                <li>Identifying key answers to show only related treatments.</li>
+                <li>Conditional rendering based on URL path.</li>
+                <li>Saving data in local storage.</li>
+              </ul>
+            </div>
+            <div className="experience-h1-ed experience-h1 marg">
               <h2>Education</h2>
               </div>
           <div className="education">
               <h3>MOBILE APPLICATION DESIGN &amp; DEVELOPMENT</h3>
-              <p>Algonquin College of Applied Arts and Technology</p>
+              <p className="miletone-left-para-600">Algonquin College of Applied Arts and Technology</p>
               <p>Expected Graduate: Spring 2019.</p>
               <ul className="education-ul">
                 <li>Dean's Honours List: Fall 2017, Winter 2018 and Fall 2018</li>
                 <li>GPA: 3.9/4</li>
               </ul>
               <h3>NODEJS WITH EXPRESS &amp; MONGODB COURSE</h3>
-              <p>Online</p>
+              <p className="miletone-left-para-600">Online</p>
               <ul className="education-ul">
                 <li>Built a working RESTful API with server-side validation.</li>
                 <li>Learned how to deploy a fully working database application.</li>
@@ -197,6 +241,18 @@ class App extends Component {
         </div>
         <div className="skills-port">
         <div id="col-left-portfolio">
+        <h3>React Native App for CBSA<i> Development in progress</i></h3>
+              <a href="#ace" onClick={this.showGraphics} id="ace" className="vid">{this.state.aceText}</a>
+              {this.state.ace&&
+              <video width="300" height="600" controls autoPlay>
+              <source src={require("./assets/ace.mov")} type="video/mp4"/>
+              </video>
+              }
+               <ul className="skills-port-ul">
+                <li>Built with React Native.</li>
+                <li>Built back-end api with NodeJs, Express.</li>
+                <li>API talks to MongoDB to store and fetch data.</li>
+              </ul>
               <h3>React JS Website <i>Development in progress</i></h3>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/guer0157/reactAntoTechWebsite"><i>Code: </i>https://github.com/guer0157/reactAntoTechWebsite</a>
               <a onClick={this.showGraphics} id="antotech" className="vid" href="#vid-antotech">{this.state.showAntotechwireframestext}</a>
