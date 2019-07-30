@@ -162,11 +162,14 @@ class App extends Component {
             <div className="exp">
               <h2>Experience</h2>
             </div>
+              <h3>SOFTWARE APPLICATIONS DEVELOPMENT - MITEL</h3>
+              <i>April 2019 - Present</i>
+              <p>Agile development of cloud based mobile applications with Angular JS, writing E2E test and providing input on UI/UX design.</p>
               <h3>PROGRAM ASSISTANT/MOBILE APPLICATION DESIGN &amp; DEVELOPMENT - ALGONQUIN COLLEGE</h3>
-              <i>January 2019 - Present</i>
+              <i>January 2019 - April 2019</i>
               <p>Help students grasp the concepts of vanilla JavaScript, NodeJs and Object Oriented languages as well as hosting open labs for first and second semester students to help them with assignments and code debugging.</p>
               <h3>IBM-SLIDE INTERN/ SOCIAL INNOVATION LAB - ALGONQUIN COLLEGE</h3>
-              <i>May 2019 - Present</i>
+              <i>May 2019 - April 2019</i>
               <p>Developed SLiDE, a brand new initiative at Algonquin College with an interdisciplinary team of students.As a team we developed SLiDS's website using HTML, CSS, and JavaScript - I was personally in charge of the JavaScript development. Showed initiative and collaboration in every project developed by the SLiDE team, which focuses on providing digital technology for socially conscious organizations. Furthermore, I took a leadership role in the team and often organized and delegated tasks to my team mates in order to work efficiently. Some of the organizations and projects undertaken at SLiDE include: A Website using HTML,CSS,JavaScript for BottleWorks and a Web App built in React JS for CHEO. <a href="#col-left-portfolio">Click here to see demos</a>
             </p>
             </div>
@@ -223,8 +226,8 @@ class App extends Component {
               <ul className="Pro-rel-skills-ul">
                 <li><h3>Programming Languages</h3><p>Java, C#, C++.</p></li>
                 <li><h3>Operating Systems</h3><p>Windows, Linux, Mac OS.</p></li>
-                <li><h3>Web Based Languages, Frameworks and Libraries</h3><p> ReactJs,
-    Express, Redux, JavaScript, NodeJs, PHP, HTML5, CSS, XML, Cordova, Workbox, Mocha, Chai, JSON, Saas.
+                <li><h3>Web Based Languages, Frameworks and Libraries</h3><p> ReactJs, AngularJs,
+    Express, Redux, JavaScript, NodeJs, PHP, HTML5, CSS, XML, Cordova, Workbox, Mocha, Chai, Protactor, JSON, Saas.
               </p></li>
                 <li><h3>Native Mobile</h3><p>React Native, Swift, Kotlin.</p></li>
                 <li><h3>Databases</h3><p>Firebase, MySql, MongoDB.</p></li>
