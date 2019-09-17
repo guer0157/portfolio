@@ -119,7 +119,6 @@ class App extends Component {
     default:
   }
 
-    console.log(this.state.showAntotechwireframes);
   }
   render() {
     return (
