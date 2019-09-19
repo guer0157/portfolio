@@ -363,9 +363,8 @@ class App extends Component {
           </div>
           <div className="skills-port">
             <div id="col-left-portfolio">
-              <h3>
-                React Native App for CBSA<i> Development in progress</i>
-              </h3>
+              <h3>React Native App for CBSA.</h3>
+              <i>Hosted in private repository.</i>
               <a
                 href="#ace"
                 onClick={this.showGraphics}
@@ -442,7 +441,6 @@ class App extends Component {
               >
                 {this.state.iosfinaltext}
               </a>
-
               {this.state.iosfinal && (
                 <video width="300" height="600" controls autoPlay>
                   <source
@@ -460,7 +458,6 @@ class App extends Component {
                   API for data.
                 </li>
               </ul>
-
               <h3>Bootstrap Website</h3>
               <a
                 target="_blank"
@@ -481,11 +478,13 @@ class App extends Component {
               </ul>
             </div>
             <div>
-              <h3>
-                React JS Web App for CHEO <i>Development in progress</i>
-              </h3>
-              <a target="_blank" rel="noopener noreferrer" href="#cheopain">
-                <i>Code: Hosted in private repository </i>Unavailable
+              <h3>React JS Web App for CHEO.</h3>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://socialinnovationlab.github.io/jia/"
+              >
+                https://socialinnovationlab.github.io/jia/
               </a>
               <a
                 onClick={this.showGraphics}
