@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75916d32781e5085297b1adc3f230b74",
+    "revision": "a9930a2d5401f0c39a31194cc1944085",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "85a3bf1e3f917a5a4f2f",
+    "revision": "af6d5b398407abc6855f",
     "url": "/portfolio/static/css/main.fc2bad2d.chunk.css"
   },
   {
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.aabefd6c.chunk.js.LICENSE"
   },
   {
-    "revision": "85a3bf1e3f917a5a4f2f",
-    "url": "/portfolio/static/js/main.7e5b505b.chunk.js"
+    "revision": "af6d5b398407abc6855f",
+    "url": "/portfolio/static/js/main.88eed8a3.chunk.js"
   },
   {
     "revision": "0d98471f6c3b69ca4251",
     "url": "/portfolio/static/js/runtime-main.44087e9b.js"
+  },
+  {
+    "revision": "0f950538bf6b34d809ae7a6449eb3313",
+    "url": "/portfolio/static/media/CesarGuerreroResume.0f950538.docx"
   },
   {
     "revision": "0e7cbb457656df15ab53d81f723416dd",
