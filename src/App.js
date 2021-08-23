@@ -154,7 +154,7 @@ class App extends Component {
                 https://www.linkedin.com/in/cesar-ggarcia
               </a>
               <img alt="mail" src={require("./assets/resumedownload.svg")} />
-              <a href="./assets/CesarGuerreroResume.docx" download>Download resume</a>
+              <a href={require("./assets/CesarGuerreroResume.docx")} download>Download resume</a>
 
             </div>
             <div className="skills">
