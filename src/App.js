@@ -153,6 +153,9 @@ class App extends Component {
               >
                 https://www.linkedin.com/in/cesar-ggarcia
               </a>
+              <img alt="mail" src={require("./assets/resumedownload.svg")} />
+              <a href="./assets/CesarGuerreroResume.docx" download>Download resume</a>
+
             </div>
             <div className="skills">
               <h2>Skills</h2>
@@ -184,16 +187,18 @@ class App extends Component {
               <div className="exp">
                 <h2>Experience</h2>
               </div>
-              <h3>SOFTWARE APPLICATIONS DEVELOPMENT - MITEL</h3>
-              <i>April 2019 - Present</i>
+              <h3>Full-stack application developer – Transport Canada</h3>
+              <i>April 2021 – Present</i>
               <p>
-                Agile development of cloud based mobile applications with
-                Angular JS, writing E2E test and providing input on UI/UX
-                design.
+                Enhancing and improving an existing vessel certification platform for the government of Canada using C#, .Net and Razor. Breaking down problems and implementing business logic. Keeping close communication with product owner and UX team to create a product that meets the needs of our users and is easy to use.
+              </p>
+              <h3>Software applications developer - Mitel</h3>
+              <i>April 2019 - April 2021</i>
+              <p>
+                Used Angular 10, RXJS, and Electron to develop our flagship product MiTeam Meetings as a progressive web app and desktop application. Within the team I’ve worked on new features, bug fixing, writing e2e tests using protractor, and took over CI/CD deployment and release of new app versions as well as writing release notes for each release. Furthermore, I have been involved in the design of MiTeam Meetings by providing valuable feedback to our UX department on implementation of new features. Lastly, I’ve developed leadership skills, carried out interviews and part-take in application feedback triaging for incoming issues.
               </p>
               <h3>
-                PROGRAM ASSISTANT/MOBILE APPLICATION DESIGN &amp; DEVELOPMENT -
-                ALGONQUIN COLLEGE
+                Program assitant/mobile applications design &amp; development - Algonquin College
               </h3>
               <i>January 2019 - April 2019</i>
               <p>
@@ -203,7 +208,7 @@ class App extends Component {
                 and code debugging.
               </p>
               <h3>
-                IBM-SLIDE INTERN/ SOCIAL INNOVATION LAB - ALGONQUIN COLLEGE
+                IBM-SLIDE intern/social innovation lab - Algonquin College
               </h3>
               <i>May 2019 - April 2019</i>
               <p>
@@ -226,23 +231,14 @@ class App extends Component {
               <h2>MILESTONE PROJECTS</h2>
             </div>
             <div className="education">
-              <h3>REACT NATIVE APP FOR CBSA</h3>
+              <h3>React native app for CBSA</h3>
               <p className="miletone-left-para-600">
-                Advanced Conveyance Examination (ACE) App for Canadian Boarder
+                Advanced Conveyance Examination (ACE) application for the Canadian Border
                 Services Agency (CBSA).
               </p>
               <p className="miletone-left-para">
-                The ACE app is currently being developed by myself and a team of
-                4 classmates as part of our final project for the Mobile
-                Application Design &amp; Development program. It is designed to
-                assist boarder officers at international ports find illegal
-                contraband hidden inside of vehicles.
-              </p>
-              <p className="miletone-left-para">
-                My role within the app is development lead. I took an active
-                role in developing the back-end API for the app with NodeJs,
-                Express and MongoDB. Also, contributed largely on the front-end,
-                as well as, integration of the front and back end.
+                The ACE app was developed as an MVP by myself and a team of 4. It is developed to assist border officers at international ports of entry find illegal goods hidden inside vehicles.
+                My role within the team was as development lead. I took an active role in developing the back-end API for the app with NodeJs, Express and MongoDB. Also, contributed largely on the front-end using React Native.
               </p>
               <p className="miletone-left-para-600">Features:</p>
               <ul className="education-ul mileston">
@@ -254,22 +250,15 @@ class App extends Component {
                   Notifying boarder officers about new hiding spots added.
                 </li>
               </ul>
-              <h3>REACT JS WEB APP FOR CHEO</h3>
+              <h3>React JS web app for CHEO</h3>
               <p className="miletone-left-para-600">
-                Juvenile Idiopathic Arthritis (JIA) OptionMap web app for
+                Juvenile Idiopathic Arthritis (JIA) option map web app for
                 Children's Hospital of Eastern Ontario (CHEO).
               </p>
               <p className="miletone-left-para">
-                I am currently doing all the development for the JIA OptionMap
-                as part of my work at the social innovation lab. The app is
-                designed to help youth with idiopathic arthritis find
-                alternative treatments to manage their pain.
-              </p>
-              <p className="miletone-left-para">
-                As the sole developer I designed the algorithm that allows the
-                app to show treatments based on the user's answers. I also
-                followed the design provided by the client and created the
-                interactive illustrations on the app with Adobe Illustrator.{" "}
+                Developed the JIA option map as part of my work at the social innovation lab. The app is designed to help youth with idiopathic arthritis find alternative treatments to manage their pain.
+                As the sole developer I designed the algorithm that allows the app to show treatments based on the user’s answers as well as all the front-end development using React Js. Also I made use of my design and UX skills to follow the design provided by the client and created the interactive illustrations on the app with Adobe Illustrator.
+
               </p>
               <p className="miletone-left-para-600">Features:</p>
               <ul className="education-ul mileston">
@@ -285,18 +274,18 @@ class App extends Component {
               <h2>Education</h2>
             </div>
             <div className="education">
-              <h3>MOBILE APPLICATION DESIGN &amp; DEVELOPMENT</h3>
+              <h3>Mobile application design &amp; development</h3>
               <p className="miletone-left-para-600">
                 Algonquin College of Applied Arts and Technology
               </p>
-              <p>Expected Graduate: Spring 2019.</p>
+              <p>Graduated: 2019.</p>
               <ul className="education-ul">
                 <li>
                   Dean's Honours List: Fall 2017, Winter 2018 and Fall 2018
                 </li>
                 <li>GPA: 3.9/4</li>
               </ul>
-              <h3>NODEJS WITH EXPRESS &amp; MONGODB COURSE</h3>
+              <h3>Node JS with Express &amp; Mongo DB course</h3>
               <p className="miletone-left-para-600">Online</p>
               <ul className="education-ul">
                 <li>
@@ -308,30 +297,30 @@ class App extends Component {
               </ul>
             </div>
             <div className="experience-h1 experience-h1-ed marg">
-              <h2>Program-related Skills</h2>
+              <h2>Skills</h2>
             </div>
             <div className="Pro-rel-skills">
               <ul className="Pro-rel-skills-ul">
                 <li>
-                  <h3>Programming Languages</h3>
+                  <h3>Programming languages</h3>
                   <p>Java, C#, C++.</p>
                 </li>
                 <li>
-                  <h3>Operating Systems</h3>
+                  <h3>Operating systems</h3>
                   <p>Windows, Linux, Mac OS.</p>
                 </li>
                 <li>
-                  <h3>Web Based Languages, Frameworks and Libraries</h3>
+                  <h3>Web based languages, frameworks and libraries</h3>
                   <p>
                     {" "}
-                    ReactJs, AngularJs, Express, Redux, JavaScript, NodeJs, PHP,
+                    ReactJs, AngularJs, Express, .NET, Redux, JavaScript, NodeJs, PHP,
                     HTML5, CSS, XML, Cordova, Workbox, Mocha, Chai, Protactor,
                     JSON, Saas.
                   </p>
                 </li>
                 <li>
-                  <h3>Native Mobile</h3>
-                  <p>React Native, Swift, Kotlin.</p>
+                  <h3>Native mobile</h3>
+                  <p>React Native, Swift, Kotlin, Xamarin</p>
                 </li>
                 <li>
                   <h3>Databases</h3>
@@ -340,17 +329,23 @@ class App extends Component {
                 <li>
                   <h3>Tools &amp; IDE</h3>
                   <p>
-                    Visual Studio, Eclipse Java, Git, Microsoft Office Suite,
+                    Visual Studio, VS Code, Eclipse Java, Git, Microsoft Office Suite,
                     Android Studio, Xcode.
                   </p>
                 </li>
                 <li>
-                  <h3>Networking Skills</h3>
+                  <h3>Networking skills</h3>
                   <p>
                     Installing configuring and troubleshooting of computers and
                     network equipment good understanding of packet tracer,
                     Wireshark, OSI &amp; TCP/IP protocol suite, routing
                     protocols, virtualization.
+                  </p>
+                </li>
+                <li>
+                  <h3>Other skills</h3>
+                  <p>
+                    UX/UI design, Adobe Illustrator, Adobe XD, fluent in spanish, great communicator, sales.
                   </p>
                 </li>
               </ul>
