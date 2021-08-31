@@ -190,13 +190,12 @@ class App extends Component {
               <h3>Full-stack application developer – Transport Canada</h3>
               <i>April 2021 – Present</i>
               <p>
-                Enhancing and improving an existing vessel certification platform for the government of Canada using C#, .Net and Razor. Breaking down problems and implementing business logic. Keeping close communication with product owner and UX team to create a product that meets the needs of our users and is easy to use.
+                Enhancing and improving an existing vessel certification platform for the government of Canada using C#, .Net and Razor. Breaking down problems and implementing business logic with a strong focus on creating intuitive and appealing UI. Keeping close communication with product owner and UX team to create a product that meets the needs of our users and is easy to use.
               </p>
               <h3>Software applications developer - Mitel</h3>
               <i>April 2019 - April 2021</i>
               <p>
-                Used Angular 10, RXJS, and Electron to develop our flagship product MiTeam Meetings as a progressive web app and desktop application. Within the team I’ve worked on new features, bug fixing, writing e2e tests using protractor, and took over CI/CD deployment and release of new app versions as well as writing release notes for each release. Furthermore, I have been involved in the design of MiTeam Meetings by providing valuable feedback to our UX department on implementation of new features. Lastly, I’ve developed leadership skills, carried out interviews and part-take in application feedback triaging for incoming issues.
-              </p>
+                Worked with Angular 10, RXJS, and Electron to develop our flagship product MiTeam Meetings as a progressive web app and desktop application. Worked on new features creating pixel perfect re-usable UI components, implementing business logic writing e2e tests using protractor, and took over CI/CD deployment and release of new app versions as well as writing release notes for each release. Furthermore, I have been involved in the design of MiTeam Meetings by providing valuable feedback to our UX department on implementation of new features. Lastly, I’ve developed leadership skills, carried out interviews and part-take in application feedback triaging for incoming issues.</p>
               <h3>
                 Program assitant/mobile applications design &amp; development - Algonquin College
               </h3>
