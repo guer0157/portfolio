@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ff5ac4418fcf4191c6b03aef025156f",
+    "revision": "fcf9ece9ab03224687ae5edfae029f3f",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "a3992661131fd67d26b0",
+    "revision": "da3a54dfc79d4aa111a4",
     "url": "/portfolio/static/css/main.fc2bad2d.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.aabefd6c.chunk.js.LICENSE"
   },
   {
-    "revision": "a3992661131fd67d26b0",
-    "url": "/portfolio/static/js/main.1868ed2f.chunk.js"
+    "revision": "da3a54dfc79d4aa111a4",
+    "url": "/portfolio/static/js/main.b33c01f6.chunk.js"
   },
   {
     "revision": "0d98471f6c3b69ca4251",
     "url": "/portfolio/static/js/runtime-main.44087e9b.js"
   },
   {
-    "revision": "0f950538bf6b34d809ae7a6449eb3313",
-    "url": "/portfolio/static/media/CesarGuerreroResume.0f950538.docx"
+    "revision": "99042a134dfe447410f6edb28f6571de",
+    "url": "/portfolio/static/media/CesarGuerreroResume.99042a13.docx"
   },
   {
     "revision": "0e7cbb457656df15ab53d81f723416dd",
