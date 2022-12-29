@@ -1,15 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   width: 100vw;
 }
-.App{
+.App {
   margin-bottom: 4rem;
 }
-p{
-  margin-top:1rem;
+p {
+  margin-top: 1rem;
 }
 
 .App-header {
@@ -21,171 +21,414 @@ p{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding:2rem 1rem;
+  padding: 2rem 1rem;
 }
-.App-header>h1{
-text-align: center;
+.App-header > h1 {
+  text-align: center;
 }
-.objective>p{
+.objective > p {
   font-size: 1rem;
 }
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
-  .doc{
-    display: flex;
-    flex-direction: column;
-  }
-  .right-col{
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.doc {
+  display: flex;
+  flex-direction: column;
+}
+.right-col {
   display: flex;
   flex-direction: column;
   align-items: left;
   width: 100%;
+}
+.objective {
+  margin-top: 1rem;
+}
+.left-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.marg,
+.experience,
+.education,
+.Pro-rel-skills,
+.skills-port,
+.name,
+.contact,
+.objective,
+.skills,
+.left-col,
+.right-col {
+  margin-top: 1rem;
+}
+.exp1 {
+  margin: 0 0 1rem 0;
+}
+.name,
+.contact,
+.objective,
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.name {
+  margin: 1rem;
+  line-height: 3.5rem;
+  border-top: 3px solid rgba(0, 185, 174, 1);
+  border-bottom: 3px solid rgba(0, 185, 174, 1);
+}
+.contact img {
+  margin: 1rem;
+  width: 25%;
+}
+.contact {
+  margin: 2rem;
+  border-bottom: 3px solid rgba(0, 185, 174, 1);
+  padding-bottom: 3rem;
+}
+.skills {
+  align-items: left;
+}
+.skills > h2 {
+  border-bottom: 3px solid rgba(0, 185, 174, 1);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.skills > ul,
+ul {
+  list-style: none;
+  text-align: left;
+}
+.skills > ul > li {
+  line-height: 2rem;
+}
+.experience,
+.education,
+.Pro-rel-skills,
+.skills-port {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 1rem 1rem;
+}
+.experience > h3,
+.education > h3,
+.Pro-rel-skills > h3,
+.skills-port > h3 {
+  margin-top: 1rem;
+}
+.experience > h2 {
+  text-align: center;
+}
+.experience-h1-ed {
+  margin: 0 1rem;
+}
+.experience-h1 {
+  width: 90%;
+  border-top: 3px solid rgba(0, 185, 174, 1);
+  border-bottom: 3px solid rgba(0, 185, 174, 1);
+  text-align: center;
+}
+#col-left-portfolio {
+  word-wrap: break-word;
+  width: 100%;
+}
+.col-right li {
+  margin-top: 1rem;
+}
+.experience-ul > li,
+.education-ul > li,
+.Pro-rel-skills-ul > li,
+.skills-port-ul > li {
+  margin: 1rem 0;
+}
+.experience-h1 > h2 {
+  margin: 1rem 0;
+}
+.vid {
+  color: rgba(0, 185, 174, 1);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 5px;
+  text-align: center;
+  border: 3px solid rgba(0, 185, 174, 1);
+  border-radius: 25px;
+  width: 10rem;
+}
+#vid-antotech {
+  width: 100%;
+}
+.vid:hover {
+  text-decoration: underline;
+}
+vid:active {
+  color: rgba(0, 185, 174, 1);
+}
+.skills-port {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  width: 90%;
+}
+.Pro-rel-skills-ul > li > p {
+  line-height: 1.5rem;
+}
+.skills-port > div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.skills-port-section {
+  width: 90%;
+  margin: 0 1rem;
+}
+.SvgButtons {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+svg {
+  width: 100%;
+}
+
+.painZone-svg-left-right {
+  width: 100%;
+}
+.painZone-svg-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.sides {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.Rside,
+.Lside {
+  width: 50%;
+  margin: 0 4px;
+}
+
+.singles {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  width: 100%;
+  justify-content: space-around;
+}
+.bParts-single {
+  height: 40%;
+  background-color: rgba(0, 185, 174, 1);
+  margin-bottom: 3px;
+  vertical-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  width: 40%;
+}
+.bParts {
+  padding: 0;
+  background-color: rgba(0, 185, 174, 1);
+  margin-right: 0;
+  margin-bottom: 6px;
+  vertical-align: middle;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  line-height: 27px;
+}
+.exp {
+  border-top: 3px solid rgba(0, 185, 174, 1);
+  border-bottom: 3px solid rgba(0, 185, 174, 1);
+  text-align: center;
+  padding: 1rem 0;
+}
+#Hips,
+#Jaw {
+  padding: 3px;
+}
+@media only screen and (min-width: 600px) {
+  .objective > p {
+    font-size: 1rem;
   }
-  .objective{
-    margin-top: 1rem;
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
   }
-  .left-col{
+  .doc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .right-col {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: left;
+    width: 60%;
   }
-  .marg, .experience, .education, .Pro-rel-skills, .skills-port, .name, .contact, .objective, .skills,.left-col,.right-col{
-    margin-top:1rem;
+  .objective {
+    margin-top: 1rem;
   }
-  .exp1{
-    margin:0 0 1rem 0; 
+  .left-col {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
   }
-  .name, .contact, .objective, .skills{
+  .marg,
+  .experience,
+  .education,
+  .Pro-rel-skills,
+  .skills-port,
+  .name,
+  .contact,
+  .objective,
+  .skills,
+  .left-col,
+  .right-col {
+    margin-top: 1rem;
+  }
+  .exp1 {
+    margin-bottom: 1rem;
+  }
+  .name,
+  .contact,
+  .objective,
+  .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align:center;
+    text-align: center;
   }
-  .name{
+  #vid-antotech {
+    width: 90%;
+  }
+  .name {
     margin: 1rem;
     line-height: 3.5rem;
     border-top: 3px solid rgba(0, 185, 174, 1);
     border-bottom: 3px solid rgba(0, 185, 174, 1);
   }
-  .contact img{
+  .contact img {
     margin: 1rem;
     width: 25%;
   }
-  .contact{
+  .contact {
     margin: 2rem;
     border-bottom: 3px solid rgba(0, 185, 174, 1);
     padding-bottom: 3rem;
   }
-  .skills{
+  .skills {
     align-items: left;
   }
-  .skills>h2{
+  .skills > h2 {
     border-bottom: 3px solid rgba(0, 185, 174, 1);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
-  .skills>ul, ul{
+  .skills > ul,
+  ul {
     list-style: none;
     text-align: left;
   }
-  .skills>ul>li{
+  .skills > ul > li {
     line-height: 2rem;
   }
-  .experience, .education, .Pro-rel-skills, .skills-port{
+  .experience,
+  .education,
+  .Pro-rel-skills,
+  .skills-port {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 1rem 1rem;
   }
-  .experience>h3, .education>h3, .Pro-rel-skills>h3, .skills-port>h3{
+  .experience > h3,
+  .education > h3,
+  .Pro-rel-skills > h3,
+  .skills-port > h3 {
     margin-top: 1rem;
   }
-  .experience>h2{
+  .experience > h2 {
     text-align: center;
-   
   }
-  .experience-h1-ed{
-    margin: 0 1rem;
-  }
-  .experience-h1{
-  width: 90%;
-  border-top: 3px solid rgba(0, 185, 174, 1);
-  border-bottom: 3px solid rgba(0, 185, 174, 1);
-  text-align: center;
-  }
-  #col-left-portfolio{
-    word-wrap: break-word;
+  .experience-h1 {
     width: 100%;
+    border-top: 3px solid rgba(0, 185, 174, 1);
+    border-bottom: 3px solid rgba(0, 185, 174, 1);
+    text-align: center;
   }
-  .col-right li{
+  .col-right li {
     margin-top: 1rem;
   }
-  .experience-ul>li, .education-ul>li, .Pro-rel-skills-ul>li, .skills-port-ul>li{
-    margin:1rem 0;
-  }
-  .experience-h1>h2{
+  .experience-ul > li,
+  .education-ul > li,
+  .Pro-rel-skills-ul > li,
+  .skills-port-ul > li {
     margin: 1rem 0;
   }
-  .vid{
-    color:rgba(0, 185, 174, 1); 
+  .experience-h1 > h2 {
+    margin: 1rem 0;
+  }
+  .vid {
+    color: rgba(0, 185, 174, 1);
     font-weight: 700;
     cursor: pointer;
-    margin-top:1rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 5px;
     text-align: center;
     border: 3px solid rgba(0, 185, 174, 1);
     border-radius: 25px;
-    width:10rem;
+    width: 10rem;
   }
-  #vid-antotech{
-    width: 100%;
-  }
-  .vid:hover{
+  .vid:hover {
     text-decoration: underline;
   }
-  vid:active{
-    color:rgba(0, 185, 174, 1); 
+  vid:active {
+    color: rgba(0, 185, 174, 1);
   }
-  .skills-port{
+  .skills-port {
     display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
-    width: 90%;
+    flex-direction: row;
   }
-  .Pro-rel-skills-ul>li>p{
+  .Pro-rel-skills-ul > li > p {
     line-height: 1.5rem;
   }
-  .skills-port>div{
+  .skills-port > div {
     display: flex;
     flex-direction: column;
     width: 80%;
   }
-  .skills-port-section{
-    width: 90%;
-    margin: 0 1rem;
+  .skills-port-section {
+    margin: 0 4rem;
   }
-  .SvgButtons{
+  .SvgButtons {
     display: flex;
-    width: 90%;
+    flex-direction: row;
+  }
+  .painZone-svg-left-right {
+    margin: 0 auto;
+  }
+  .painZone-svg-center {
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
   }
-  svg{
-    width: 100%;
-  }
-
-  .painZone-svg-left-right{
-    width: 100%;
-  }
-  .painZone-svg-center{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   width: 100%;
-  }
-  .sides{
+  .sides {
     width: 100%;
     text-align: center;
     display: flex;
@@ -193,33 +436,36 @@ text-align: center;
     height: 100%;
     justify-content: space-evenly;
   }
-  .Rside, .Lside{   
-  width: 50%;
-  margin: 0 4px; 
+  .Rside,
+  .Lside {
+    width: 50%;
+    margin: 0 4px;
   }
 
-  .singles{
+  .singles {
     text-align: center;
     display: flex;
     flex-direction: row;
     height: 20%;
     width: 100%;
     justify-content: space-around;
-    
   }
-  .bParts-single{
-    height: 40%;
-    background-color:  rgba(0, 185, 174, 1);
-    margin-bottom: 3px;
+  .bParts-single {
+    height: 15%;
+    background-color: rgba(0, 185, 174, 1);
+    margin: 3px;
     vertical-align: center;
     border-radius: 5px;
     cursor: pointer;
     color: white;
-    width:40%;
+    width: 40%;
   }
-  .bParts{
+  .bParts-single:hover {
+    background-color: rgb(1, 133, 124);
+  }
+  .bParts {
     padding: 0;
-    background-color:  rgba(0, 185, 174, 1);
+    background-color: rgba(0, 185, 174, 1);
     margin-right: 0;
     margin-bottom: 6px;
     vertical-align: middle;
@@ -228,220 +474,18 @@ text-align: center;
     color: white;
     line-height: 27px;
   }
-  .exp{
-  border-top: 3px solid rgba(0, 185, 174, 1);
-  border-bottom: 3px solid rgba(0, 185, 174, 1);
-  text-align: center;
-  padding: 1rem 0;
+  .activate {
+    font-weight: 400;
+    transform: scale(1.1);
   }
-  #Hips, #Jaw{
-    padding:3px;
+  .bParts:hover {
+    background-color: rgb(1, 133, 124);
   }
-  @media only screen and (min-width: 600px) {
-    .objective>p{
-      font-size: 1rem;
-    }
-   
-      code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-          monospace;
-      }
-      .doc{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .right-col{
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      width: 60%;
-      }
-      .objective{
-        margin-top: 1rem;
-      }
-      .left-col{
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-      }
-      .marg, .experience, .education, .Pro-rel-skills, .skills-port, .name, .contact, .objective, .skills,.left-col,.right-col{
-        margin-top:1rem;
-      }
-      .exp1{
-        margin-bottom: 1rem;
-      }
-      .name, .contact, .objective, .skills{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align:center;
-      }
-      #vid-antotech{
-        width: 90%;
-      }
-      .name{
-        margin: 1rem;
-        line-height: 3.5rem;
-        border-top: 3px solid rgba(0, 185, 174, 1);
-        border-bottom: 3px solid rgba(0, 185, 174, 1);
-      }
-      .contact img{
-        margin: 1rem;
-        width: 25%;
-      }
-      .contact{
-        margin: 2rem;
-        border-bottom: 3px solid rgba(0, 185, 174, 1);
-        padding-bottom: 3rem;
-      }
-      .skills{
-        align-items: left;
-      }
-      .skills>h2{
-        border-bottom: 3px solid rgba(0, 185, 174, 1);
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-      }
-      .skills>ul, ul{
-        list-style: none;
-        text-align: left;
-      }
-      .skills>ul>li{
-        line-height: 2rem;
-      }
-      .experience, .education, .Pro-rel-skills, .skills-port{
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-      }
-      .experience>h3, .education>h3, .Pro-rel-skills>h3, .skills-port>h3{
-        margin-top: 1rem;
-      }
-      .experience>h2{
-        text-align: center;
-       
-      }
-      .experience-h1{
-        width: 100%;
-      border-top: 3px solid rgba(0, 185, 174, 1);
-      border-bottom: 3px solid rgba(0, 185, 174, 1);
-      text-align: center;
-      }
-      .col-right li{
-        margin-top: 1rem;
-      }
-      .experience-ul>li, .education-ul>li, .Pro-rel-skills-ul>li, .skills-port-ul>li{
-        margin:1rem 0;
-      }
-      .experience-h1>h2{
-        margin: 1rem 0;
-      }
-      .vid{
-        color:rgba(0, 185, 174, 1); 
-        font-weight: 700;
-        cursor: pointer;
-        margin-top:1rem;
-        margin-bottom: 1rem;
-        padding: 5px;
-        text-align: center;
-        border: 3px solid rgba(0, 185, 174, 1);
-        border-radius: 25px;
-        width:10rem;
-      }
-      .vid:hover{
-        text-decoration: underline;
-      }
-      vid:active{
-        color:rgba(0, 185, 174, 1); 
-      }
-      .skills-port{
-        display: flex;
-        flex-direction: row;
-      }
-      .Pro-rel-skills-ul>li>p{
-        line-height: 1.5rem;
-      }
-      .skills-port>div{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-      }
-      .skills-port-section{
-        margin: 0 4rem;
-      }
-      .SvgButtons{
-        display: flex;
-        flex-direction: row;
-    
-      }
-      .painZone-svg-left-right{
-        margin:0 auto;
-      }
-      .painZone-svg-center{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-evenly;
-       width: 50%;
-      }
-      .sides{
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        justify-content: space-evenly;
-      }
-      .Rside, .Lside{   
-      width: 50%;
-      margin: 0 4px; 
-      }
-    
-      .singles{
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        height: 20%;
-        width: 100%;
-        justify-content: space-around;
-        
-      }
-      .bParts-single{
-        height: 15%;
-        background-color:  rgba(0, 185, 174, 1);
-        margin: 3px;
-        vertical-align: center;
-        border-radius: 5px;
-        cursor: pointer;
-        color: white;
-        width:40%;
-      }
-      .bParts-single:hover{
-        background-color:  rgb(1, 133, 124);
-      }
-      .bParts{
-        padding: 0;
-        background-color:  rgba(0, 185, 174, 1);
-        margin-right: 0;
-        margin-bottom: 6px;
-        vertical-align: middle;
-        border-radius: 5px;
-        cursor: pointer;
-        color: white;
-        line-height: 27px;
-      }
-      .activate{
-        font-weight: 400;
-        transform: scale(1.1);
-      }
-      .bParts:hover{
-        background-color:  rgb(1, 133, 124);
-      }
-  }
-  .miletone-left-para-600{
-    font-weight: 600;
-  }
-  .education-ul.mileston{
-    padding-left: 1rem;
-    list-style-type:  circle;
-  }
+}
+.miletone-left-para-600 {
+  font-weight: 600;
+}
+.education-ul.mileston {
+  padding-left: 1rem;
+  list-style-type: circle;
+}

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import HumanSvg from "./components/HumanSvg";
-
+import mail from "./assets/mail.svg";
+import tel from "./assets/tel.svg";
+import download from "./assets/resumedownload.svg";
 class App extends Component {
   constructor() {
     super();
@@ -16,15 +18,13 @@ class App extends Component {
       uiux: false,
       cheopain: false,
       ace: false,
-      listCount: 0
+      listCount: 0,
     };
   }
   componentDidMount() {
     let list = document.querySelectorAll(".skills-animation");
     let listCount = 0;
     if (listCount > 6) listCount = 0;
-
-    console.log(list);
     setInterval(() => {
       list[this.state.listCount].classList.add("activate");
       setTimeout(() => {
@@ -33,13 +33,12 @@ class App extends Component {
         listCountAdder++;
         if (listCountAdder > 6) listCountAdder = 0;
         this.setState({
-          listCount: listCountAdder
+          listCount: listCountAdder,
         });
       }, 500);
     }, 1000);
-    //  },8000);
   }
-  showGraphics = ev => {
+  showGraphics = (ev) => {
     this.setState({
       showAntotechwireframes: false,
       iosfinal: false,
@@ -50,7 +49,7 @@ class App extends Component {
       iosfinaltext: "Watch Video",
       uiuxtext: "Watch Video",
       cheopainText: "Try Demo",
-      aceText: "Watch Video"
+      aceText: "Watch Video",
     });
     let show = ev.target.id;
     switch (show) {
@@ -63,7 +62,7 @@ class App extends Component {
         }
         this.setState({
           iosfinal: !this.state.iosfinal,
-          iosfinaltext: original
+          iosfinaltext: original,
         });
         break;
       case "ace":
@@ -75,7 +74,7 @@ class App extends Component {
         }
         this.setState({
           ace: !this.state.ace,
-          aceText: orgnal
+          aceText: orgnal,
         });
         break;
       case "antotech":
@@ -87,7 +86,7 @@ class App extends Component {
         }
         this.setState({
           showAntotechwireframes: !this.state.showAntotechwireframes,
-          showAntotechwireframestext: origina
+          showAntotechwireframestext: origina,
         });
         break;
       case "uiux":
@@ -99,7 +98,7 @@ class App extends Component {
         }
         this.setState({
           uiuxtext: origin,
-          uiux: !this.state.uiux
+          uiux: !this.state.uiux,
         });
         break;
       case "cheopain":
@@ -111,7 +110,7 @@ class App extends Component {
         }
         this.setState({
           cheopain: !this.state.cheopain,
-          cheopainText: origi
+          cheopainText: origi,
         });
         break;
       default:
@@ -126,8 +125,9 @@ class App extends Component {
           <div className="objective">
             <h4>Objective</h4>
             <p>
-              To work in a company where there is constant learning and
-              collaboration that values innovation, creativity and quality.
+              To build intuitive and efficient software can provide great user
+              experience to its users, therefore making their life at work or
+              home better.
             </p>
           </div>
         </header>
@@ -139,23 +139,24 @@ class App extends Component {
               <h1>GARCIA</h1>
             </div>
             <div className="contact">
-              <img alt="mail" src={require("./assets/mail.svg")} />
+              <img alt="mail" src={mail} />
               <a href="mailto:mr.cesar.guerrero@gmail.com">
                 mr.cesar.guerrero@gmail.com
               </a>
-              <img alt="mail" src={require("./assets/tel.svg")} />
+              <img alt="mail" src={tel} />
               <a href="tel:+14389790112">(438)979-0112</a>
-              <img alt="mail" src={require("./assets/linkedin.svg")} />
+              {/* <img alt="mail" src={require("./assets/linkedin.svg")} />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/devndesign/"
               >
                 https://www.linkedin.com/in/cesar-ggarcia
+              </a> */}
+              <img alt="mail" src={download} />
+              <a href={require("./assets/CesarGuerreroResume.docx")} download>
+                Download resume
               </a>
-              <img alt="mail" src={require("./assets/resumedownload.svg")} />
-              <a href={require("./assets/CesarGuerreroResume.docx")} download>Download resume</a>
-
             </div>
             <div className="skills">
               <h2>Skills</h2>
@@ -187,17 +188,45 @@ class App extends Component {
               <div className="exp">
                 <h2>Experience</h2>
               </div>
-              <h3>Full-stack application developer – Transport Canada</h3>
-              <i>April 2021 – Present</i>
+              <h3>React Developer – Shoebox.md</h3>
+              <i>Oct 2021 – Nov 2022</i>
               <p>
-                Enhancing and improving an existing vessel certification platform for the government of Canada using C#, .Net and Razor. Breaking down problems and implementing business logic with a strong focus on creating intuitive and appealing UI. Keeping close communication with product owner and UX team to create a product that meets the needs of our users and is easy to use.
+                Development of new features for our customer portal with React,
+                Hooks and Redux. Working collaboratively and with cloud squad to
+                ensure front and back-end requirements align. Taking part in
+                architectural discussions giving my input and voicing out
+                concerns as well as implementation discussion where I help
+                product owners understand the work needed to complete a feature.
+              </p>
+              <h3>Full-stack application developer – Transport Canada</h3>
+              <i>April 2021 – Oct 2021 (6mo contract)</i>
+              <p>
+                Enhancing and improving an existing vessel certification
+                platform for the government of Canada using C#, .Net and Razor.
+                Breaking down problems and implementing business logic with a
+                strong focus on creating intuitive and appealing UI. Keeping
+                close communication with product owner and UX team to create a
+                product that meets the needs of our users and is easy to use.
               </p>
               <h3>Software applications developer - Mitel</h3>
               <i>April 2019 - April 2021</i>
               <p>
-                Worked with Angular 10, RXJS, and Electron to develop our flagship product MiTeam Meetings as a progressive web app and desktop application. Worked on new features creating pixel perfect re-usable UI components, implementing business logic writing e2e tests using protractor, and took over CI/CD deployment and release of new app versions as well as writing release notes for each release. Furthermore, I have been involved in the design of MiTeam Meetings by providing valuable feedback to our UX department on implementation of new features. Lastly, I’ve developed leadership skills, carried out interviews and part-take in application feedback triaging for incoming issues.</p>
+                Worked with Angular 10, RXJS, and Electron to develop our
+                flagship product MiTeam Meetings as a progressive web app and
+                desktop application. Worked on new features creating pixel
+                perfect re-usable UI components, implementing business logic
+                writing e2e tests using protractor, and took over CI/CD
+                deployment and release of new app versions as well as writing
+                release notes for each release. Furthermore, I have been
+                involved in the design of MiTeam Meetings by providing valuable
+                feedback to our UX department on implementation of new features.
+                Lastly, I’ve developed leadership skills, carried out interviews
+                and part-take in application feedback triaging for incoming
+                issues.
+              </p>
               <h3>
-                Program assitant/mobile applications design &amp; development - Algonquin College
+                Program assitant/mobile applications design &amp; development -
+                Algonquin College
               </h3>
               <i>January 2019 - April 2019</i>
               <p>
@@ -232,12 +261,17 @@ class App extends Component {
             <div className="education">
               <h3>React native app for CBSA</h3>
               <p className="miletone-left-para-600">
-                Advanced Conveyance Examination (ACE) application for the Canadian Border
-                Services Agency (CBSA).
+                Advanced Conveyance Examination (ACE) application for the
+                Canadian Border Services Agency (CBSA).
               </p>
               <p className="miletone-left-para">
-                The ACE app was developed as an MVP by myself and a team of 4. It is developed to assist border officers at international ports of entry find illegal goods hidden inside vehicles.
-                My role within the team was as development lead. I took an active role in developing the back-end API for the app with NodeJs, Express and MongoDB. Also, contributed largely on the front-end using React Native.
+                The ACE app was developed as an MVP by myself and a team of 4.
+                It is developed to assist border officers at international ports
+                of entry find illegal goods hidden inside vehicles. My role
+                within the team was as development lead. I took an active role
+                in developing the back-end API for the app with NodeJs, Express
+                and MongoDB. Also, contributed largely on the front-end using
+                React Native.
               </p>
               <p className="miletone-left-para-600">Features:</p>
               <ul className="education-ul mileston">
@@ -255,9 +289,15 @@ class App extends Component {
                 Children's Hospital of Eastern Ontario (CHEO).
               </p>
               <p className="miletone-left-para">
-                Developed the JIA option map as part of my work at the social innovation lab. The app is designed to help youth with idiopathic arthritis find alternative treatments to manage their pain.
-                As the sole developer I designed the algorithm that allows the app to show treatments based on the user’s answers as well as all the front-end development using React Js. Also I made use of my design and UX skills to follow the design provided by the client and created the interactive illustrations on the app with Adobe Illustrator.
-
+                Developed the JIA option map as part of my work at the social
+                innovation lab. The app is designed to help youth with
+                idiopathic arthritis find alternative treatments to manage their
+                pain. As the sole developer I designed the algorithm that allows
+                the app to show treatments based on the user’s answers as well
+                as all the front-end development using React Js. Also I made use
+                of my design and UX skills to follow the design provided by the
+                client and created the interactive illustrations on the app with
+                Adobe Illustrator.
               </p>
               <p className="miletone-left-para-600">Features:</p>
               <ul className="education-ul mileston">
@@ -312,9 +352,9 @@ class App extends Component {
                   <h3>Web based languages, frameworks and libraries</h3>
                   <p>
                     {" "}
-                    ReactJs, AngularJs, Express, .NET, Redux, JavaScript, NodeJs, PHP,
-                    HTML5, CSS, XML, Cordova, Workbox, Mocha, Chai, Protactor,
-                    JSON, Saas.
+                    ReactJs, AngularJs, Express, .NET, Redux, JavaScript,
+                    NodeJs, PHP, HTML5, CSS, XML, Cordova, Workbox, Mocha, Chai,
+                    Protactor, JSON, Saas.
                   </p>
                 </li>
                 <li>
@@ -328,8 +368,8 @@ class App extends Component {
                 <li>
                   <h3>Tools &amp; IDE</h3>
                   <p>
-                    Visual Studio, VS Code, Eclipse Java, Git, Microsoft Office Suite,
-                    Android Studio, Xcode.
+                    Visual Studio, VS Code, Eclipse Java, Git, Microsoft Office
+                    Suite, Android Studio, Xcode.
                   </p>
                 </li>
                 <li>
@@ -344,7 +384,8 @@ class App extends Component {
                 <li>
                   <h3>Other skills</h3>
                   <p>
-                    UX/UI design, Adobe Illustrator, Adobe XD, fluent in spanish, great communicator, sales.
+                    UX/UI design, Adobe Illustrator, Adobe XD, fluent in
+                    spanish, great communicator, sales.
                   </p>
                 </li>
               </ul>
