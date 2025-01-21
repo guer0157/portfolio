@@ -4,6 +4,8 @@ import HumanSvg from "./components/HumanSvg";
 import mail from "./assets/mail.svg";
 import tel from "./assets/tel.svg";
 import download from "./assets/resumedownload.svg";
+// import GitHubCalendar from "react-github-calendar";
+
 class App extends Component {
   constructor() {
     super();
@@ -154,7 +156,7 @@ class App extends Component {
                 https://www.linkedin.com/in/cesar-ggarcia
               </a> */}
               <img alt="mail" src={download} />
-              <a href={require("./assets/CesarGuerreroResume23.docx")} download>
+              <a href={require("./assets/CesarGuerreroResume_25.pdf")} download>
                 Download resume
               </a>
             </div>
@@ -188,8 +190,8 @@ class App extends Component {
               <div className="exp">
                 <h2>Experience</h2>
               </div>
-              <h3>React Developer – Shoebox.md</h3>
-              <i>Oct 2021 – Nov 2022</i>
+              <h3>Front-end Developer – Cantactix</h3>
+              <i>Oct 2022 – Present</i>
               <p>
                 Development of new features for our customer portal with React,
                 Hooks and Redux. Working collaboratively and with cloud squad to
@@ -198,18 +200,27 @@ class App extends Component {
                 concerns as well as implementation discussion where I help
                 product owners understand the work needed to complete a feature.
               </p>
-              <h3>Full-stack application developer – Transport Canada</h3>
-              <i>April 2021 – Oct 2021 (6mo contract)</i>
+              <h3>Web Development Professor - Algonquin College - Part-time</h3>
+              <i>Jan 2021 – May 2024</i>
               <p>
-                Enhancing and improving an existing vessel certification
-                platform for the government of Canada using C#, .Net and Razor.
-                Breaking down problems and implementing business logic with a
-                strong focus on creating intuitive and appealing UI. Keeping
-                close communication with product owner and UX team to create a
-                product that meets the needs of our users and is easy to use.
+                Taught Web development focused on front-end development where
+                intermediate students take their basic knowledge of CSS, HTML,
+                JS and apply it to real life projects. Students are introduced
+                to more complex development using ReactJS and other common
+                workplace practices such as projects management and code
+                reviews.
+              </p>
+              <h3>React Developer – Shoebox.md</h3>
+              <i>Nov 2020 – Oct 2022</i>
+              <p>
+                with cloud squad to ensure front and back-end requirements
+                align. Taking part in architectural discussions giving my input
+                and voicing out concerns as well as implementation discussion
+                where I help product owners understand the work needed to
+                complete a feature.
               </p>
               <h3>Software applications developer - Mitel</h3>
-              <i>April 2019 - April 2021</i>
+              <i>Nov 2017 – Nov 2020</i>
               <p>
                 Worked with Angular 10, RXJS, and Electron to develop our
                 flagship product MiTeam Meetings as a progressive web app and
@@ -335,6 +346,10 @@ class App extends Component {
                 </li>
               </ul>
             </div>
+            {/* <div className="experience-h1 experience-h1-ed marg">
+              <h2>Github Calendar</h2>
+            </div>
+            <GitHubCalendar username="guer0157" /> */}
             <div className="experience-h1 experience-h1-ed marg">
               <h2>Skills</h2>
             </div>
