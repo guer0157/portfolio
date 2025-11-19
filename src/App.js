@@ -145,30 +145,6 @@ class App extends Component {
                 Download resume
               </a>
             </div>
-            <div className="skills">
-              <h2>Skills</h2>
-              <ul>
-                <li className="skills-animation">
-                  Innovative problem solving skills.
-                </li>
-                <li className="skills-animation">
-                  Strong social and interpersonal skills.
-                </li>
-                <li className="skills-animation">Goal oriented.</li>
-                <li className="skills-animation">
-                  Leadership skills and initiative.
-                </li>
-                <li className="skills-animation">
-                  Attentive to detail and quality.
-                </li>
-                <li className="skills-animation">
-                  Ability to work with little supervision.
-                </li>
-                <li className="skills-animation">
-                  Strong collaboration skills.
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="right-col">
             <div className="professional-summary-ul">
@@ -208,7 +184,7 @@ class App extends Component {
                   <strong>MySQL</strong>, <strong>MongoDB</strong>
                 </li>
                 <li>
-                  Web development using various front-end frameworks including
+                  Web development using various front-end frameworks including{" "}
                   <strong>React</strong>, <strong>Angular</strong>,{" "}
                   <strong>Vue</strong>
                 </li>
