@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fb1800f8.css",
-    "main.js": "/portfolio/static/js/main.eda16a42.js",
+    "main.css": "/portfolio/static/css/main.a19eef95.css",
+    "main.js": "/portfolio/static/js/main.0cc205ba.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/iosdevelopment.mov": "/portfolio/static/media/iosdevelopment.d307ebc6fbeff62c36b5.mov",
-    "static/media/MyMovie.mp4": "/portfolio/static/media/MyMovie.6f2d4e734c6ae32ecf1f.mp4",
     "static/media/ace.mov": "/portfolio/static/media/ace.0c9413b7c709db8e9937.mov",
-    "static/media/uiux.mov": "/portfolio/static/media/uiux.696eb1de01fb0b073016.mov",
-    "static/media/CesarGuerreroResume_25.pdf": "/portfolio/static/media/CesarGuerreroResume_25.92b383c46e810e23b2c4.pdf",
+    "static/media/CesarGuerrero_Resume.pdf": "/portfolio/static/media/CesarGuerrero_Resume.c8573050b85582e89936.pdf",
     "static/media/tel.svg": "/portfolio/static/media/tel.0d46ff5d56f90ca5669ae7a9f6582702.svg",
     "static/media/resumedownload.svg": "/portfolio/static/media/resumedownload.130079b1af373066797de3c3b1a4ba63.svg",
     "index.html": "/portfolio/index.html",
     "static/media/mail.svg": "/portfolio/static/media/mail.6600a494c2f9516f9ffc623a4b099da0.svg",
-    "main.fb1800f8.css.map": "/portfolio/static/css/main.fb1800f8.css.map",
-    "main.eda16a42.js.map": "/portfolio/static/js/main.eda16a42.js.map",
+    "main.a19eef95.css.map": "/portfolio/static/css/main.a19eef95.css.map",
+    "main.0cc205ba.js.map": "/portfolio/static/js/main.0cc205ba.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb1800f8.css",
-    "static/js/main.eda16a42.js"
+    "static/css/main.a19eef95.css",
+    "static/js/main.0cc205ba.js"
   ]
 }
