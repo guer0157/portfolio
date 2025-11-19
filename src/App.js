@@ -4,8 +4,6 @@ import HumanSvg from "./components/HumanSvg";
 import mail from "./assets/mail.svg";
 import tel from "./assets/tel.svg";
 import download from "./assets/resumedownload.svg";
-// import GitHubCalendar from "react-github-calendar";
-
 class App extends Component {
   constructor() {
     super();
@@ -122,24 +120,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Mobile Application Developer</h1>
-          <h5>Made with ReactJS</h5>
-          <div className="objective">
-            <h4>Objective</h4>
-            <p>
-              To build intuitive and efficient software can provide great user
-              experience to its users, therefore making their life at work or
-              home better.
-            </p>
-          </div>
+          <h1>Cesar Guerrero Garcia</h1>
+          <h5>Senior Fullstack Developer</h5>
         </header>
         <div className="doc">
           <div className="left-col">
-            <div className="name">
-              <h1>CESAR</h1>
-              <h1>GUERRERO</h1>
-              <h1>GARCIA</h1>
-            </div>
             <div className="contact">
               <img alt="mail" src={mail} />
               <a href="mailto:mr.cesar.guerrero@gmail.com">
@@ -156,7 +141,7 @@ class App extends Component {
                 https://www.linkedin.com/in/cesar-ggarcia
               </a> */}
               <img alt="mail" src={download} />
-              <a href={require("./assets/CesarGuerreroResume_25.pdf")} download>
+              <a href={require("./assets/CesarGuerrero_Resume.pdf")} download>
                 Download resume
               </a>
             </div>
@@ -186,85 +171,170 @@ class App extends Component {
             </div>
           </div>
           <div className="right-col">
+            <div className="professional-summary-ul">
+              <div className="exp">
+                <h2>Professional Summary</h2>
+              </div>
+              <ul>
+                <li>
+                  Professional software developer offering a strong foundation
+                  in application development and programming principles across
+                  multiple platforms with a focus on frontend.
+                </li>
+                <li>
+                  Experienced in object-oriented programming, test-driven
+                  development, debugging, interface design.
+                </li>
+                <li>
+                  A lifelong learner who is quick to understand and master new
+                  technologies. History of working successfully in both team and
+                  self-directed settings.
+                </li>
+                <li>
+                  Ability to quickly grasp complex systems while identifying
+                  opportunities for improvements and resolution of critical
+                  issues.
+                </li>
+              </ul>
+            </div>
+            <div className="experience-h1 experience-h1-ed marg">
+              <h2>Skills</h2>
+            </div>
+            <div className="Pro-rel-skills">
+              <ul className="Pro-rel-skills-ul">
+                <li>
+                  Backend development using <strong>Node.js</strong>,{" "}
+                  <strong>Python</strong>, <strong>C#</strong>,{" "}
+                  <strong>MySQL</strong>, <strong>MongoDB</strong>
+                </li>
+                <li>
+                  Web development using various front-end frameworks including
+                  <strong>React</strong>, <strong>Angular</strong>,{" "}
+                  <strong>Vue</strong>
+                </li>
+                <li>
+                  <strong>Git</strong> version control
+                </li>
+              </ul>
+            </div>
             <div className="experience">
               <div className="exp">
                 <h2>Experience</h2>
               </div>
-              <h3>Front-end Developer – Cantactix</h3>
+              <h3>Senior Frontend Developer – Cantactix</h3>
               <i>Oct 2022 – Present</i>
-              <p>
-                Development of new features for our customer portal with React,
-                Hooks and Redux. Working collaboratively and with cloud squad to
-                ensure front and back-end requirements align. Taking part in
-                architectural discussions giving my input and voicing out
-                concerns as well as implementation discussion where I help
-                product owners understand the work needed to complete a feature.
-              </p>
-              <h3>Web Development Professor - Algonquin College - Part-time</h3>
-              <i>Jan 2021 – May 2024</i>
-              <p>
-                Taught Web development focused on front-end development where
-                intermediate students take their basic knowledge of CSS, HTML,
-                JS and apply it to real life projects. Students are introduced
-                to more complex development using ReactJS and other common
-                workplace practices such as projects management and code
-                reviews.
-              </p>
-              <h3>React Developer – Shoebox.md</h3>
+              <ul>
+                <li>
+                  Led the re-design of our front-end built with React, resulting
+                  in a 20% reduction of our codebase.
+                </li>
+                <li>
+                  Implemented and led the development of a component library
+                  using React, Typescript, Rollup and styled-components securing
+                  design consistency across multiple products.
+                </li>
+                <li>
+                  Took a leading role in the development of code standards for
+                  our code base with a focus on modularity, reducing repetition
+                  in the code.
+                </li>
+                <li>
+                  Conducted code reviews, ensuring adherence to best practices
+                  and coding standards, which reduced production bugs by 40%.
+                </li>
+                <li>
+                  Mentored junior engineers and conducted technical training
+                  sessions, fostering a culture of continuous learning and
+                  improvement.
+                </li>
+                <li>
+                  Implemented robust automated testing frameworks, increasing
+                  test coverage by 70% and ensuring high code quality.
+                </li>
+                <li>
+                  Suggested and made various improvements to our UX and
+                  accessibility scores based on WCAG standards.
+                </li>
+              </ul>
+              <h3>Senior React Developer – Shoebox.md</h3>
               <i>Nov 2020 – Oct 2022</i>
-              <p>
-                with cloud squad to ensure front and back-end requirements
-                align. Taking part in architectural discussions giving my input
-                and voicing out concerns as well as implementation discussion
-                where I help product owners understand the work needed to
-                complete a feature.
-              </p>
+              <ul>
+                <li>
+                  Collaborate with internal business units to understand
+                  business goals & objectives.
+                </li>
+                <li>
+                  Planning and documenting technical specifications for features
+                  or system design.
+                </li>
+                <li>
+                  Lead by example, developing efficient, high-performance
+                  software, implementing frontend using React, Typescript and
+                  backend using NodeJS and styled-jsx.
+                </li>
+                <li>
+                  Conducted code reviews, ensuring only high-quality code makes
+                  it to production.
+                </li>
+                <li>
+                  Worked with the software development team and architects to
+                  break down complex requirements into smaller tasks and coach
+                  team members to deliver these features.
+                </li>
+                <li>
+                  Monitored progress, identifying potential impediments and
+                  bottlenecks; steering the course so commitments are held, and
+                  projects remain on track. Contributes to QA efforts where
+                  needed.
+                </li>
+                <li>
+                  Estimate and calculate time allocation for each story in the
+                  sprint to coordinate development efforts and ensure planning
+                  is accurate.
+                </li>
+              </ul>
               <h3>Software applications developer - Mitel</h3>
               <i>Nov 2017 – Nov 2020</i>
-              <p>
-                Worked with Angular 10, RXJS, and Electron to develop our
-                flagship product MiTeam Meetings as a progressive web app and
-                desktop application. Worked on new features creating pixel
-                perfect re-usable UI components, implementing business logic
-                writing e2e tests using protractor, and took over CI/CD
-                deployment and release of new app versions as well as writing
-                release notes for each release. Furthermore, I have been
-                involved in the design of MiTeam Meetings by providing valuable
-                feedback to our UX department on implementation of new features.
-                Lastly, I’ve developed leadership skills, carried out interviews
-                and part-take in application feedback triaging for incoming
-                issues.
-              </p>
-              <h3>
-                Program assitant/mobile applications design &amp; development -
-                Algonquin College
-              </h3>
-              <i>January 2019 - April 2019</i>
-              <p>
-                Help students grasp the concepts of vanilla JavaScript, NodeJs
-                and Object Oriented languages as well as hosting open labs for
-                first and second semester students to help them with assignments
-                and code debugging.
-              </p>
-              <h3>
-                IBM-SLIDE intern/social innovation lab - Algonquin College
-              </h3>
-              <i>May 2019 - April 2019</i>
-              <p>
-                Developed SLiDE, a brand new initiative at Algonquin College
-                with an interdisciplinary team of students.As a team we
-                developed SLiDS's website using HTML, CSS, and JavaScript - I
-                was personally in charge of the JavaScript development. Showed
-                initiative and collaboration in every project developed by the
-                SLiDE team, which focuses on providing digital technology for
-                socially conscious organizations. Furthermore, I took a
-                leadership role in the team and often organized and delegated
-                tasks to my team mates in order to work efficiently. Some of the
-                organizations and projects undertaken at SLiDE include: A
-                Website using HTML,CSS,JavaScript for BottleWorks and a Web App
-                built in React JS for CHEO.{" "}
-                <a href="#col-left-portfolio">Click here to see demos</a>
-              </p>
+              <ul>
+                <li>
+                  Participated in the full software development lifecycle –
+                  requirements gathering, scoping, design, implementation,
+                  documentation, testing, and maintenance, as my team’s scrum
+                  master and individual contributor.
+                </li>
+                <li>
+                  Write code across the full stack – UI, back-end services, and
+                  data storage using Node.js & React
+                </li>
+                <li>
+                  Collaborate with peers when designing and building new
+                  features.
+                </li>
+                <li>
+                  Provide code reviews for fellow team members, promoting
+                  high-quality work, sound software methodologies and attention
+                  to detail.
+                </li>
+                <li>
+                  Worked closely with the product owner to ensure development
+                  aligns with product specification and the company's long-term
+                  product strategy and roadmap.
+                </li>
+                <li>
+                  Evaluating, prototyping, and rolling out new tools and
+                  technologies to improve the way we build products and help
+                  projects deliver to our customers.
+                </li>
+                <li>
+                  Integrating tools and automating their provisioning,
+                  configuration, and management.
+                </li>
+                <li>Consumption of various cloud services on AWS.</li>
+                <li>
+                  Developing automated tests for the new and updated
+                  functionality.
+                </li>
+              </ul>
             </div>
             <div className="experience-h1-ed experience-h1 marg">
               <h2>MILESTONE PROJECTS</h2>
@@ -328,81 +398,12 @@ class App extends Component {
               <p className="miletone-left-para-600">
                 Algonquin College of Applied Arts and Technology
               </p>
-              <p>Graduated: 2019.</p>
               <ul className="education-ul">
                 <li>
-                  Dean's Honours List: Fall 2017, Winter 2018 and Fall 2018
+                  Dean's Honours List: Fall 2016, Winter 2017, Fall 2017 and
+                  Winter 2018
                 </li>
                 <li>GPA: 3.9/4</li>
-              </ul>
-              <h3>Node JS with Express &amp; Mongo DB course</h3>
-              <p className="miletone-left-para-600">Online</p>
-              <ul className="education-ul">
-                <li>
-                  Built a working RESTful API with server-side validation.
-                </li>
-                <li>
-                  Learned how to deploy a fully working database application.
-                </li>
-              </ul>
-            </div>
-            {/* <div className="experience-h1 experience-h1-ed marg">
-              <h2>Github Calendar</h2>
-            </div>
-            <GitHubCalendar username="guer0157" /> */}
-            <div className="experience-h1 experience-h1-ed marg">
-              <h2>Skills</h2>
-            </div>
-            <div className="Pro-rel-skills">
-              <ul className="Pro-rel-skills-ul">
-                <li>
-                  <h3>Programming languages</h3>
-                  <p>Java, C#, C++.</p>
-                </li>
-                <li>
-                  <h3>Operating systems</h3>
-                  <p>Windows, Linux, Mac OS.</p>
-                </li>
-                <li>
-                  <h3>Web based languages, frameworks and libraries</h3>
-                  <p>
-                    {" "}
-                    ReactJs, AngularJs, Express, .NET, Redux, JavaScript,
-                    NodeJs, PHP, HTML5, CSS, XML, Cordova, Workbox, Mocha, Chai,
-                    Protactor, JSON, Saas.
-                  </p>
-                </li>
-                <li>
-                  <h3>Native mobile</h3>
-                  <p>React Native, Swift, Kotlin, Xamarin</p>
-                </li>
-                <li>
-                  <h3>Databases</h3>
-                  <p>Firebase, MySql, MongoDB.</p>
-                </li>
-                <li>
-                  <h3>Tools &amp; IDE</h3>
-                  <p>
-                    Visual Studio, VS Code, Eclipse Java, Git, Microsoft Office
-                    Suite, Android Studio, Xcode.
-                  </p>
-                </li>
-                <li>
-                  <h3>Networking skills</h3>
-                  <p>
-                    Installing configuring and troubleshooting of computers and
-                    network equipment good understanding of packet tracer,
-                    Wireshark, OSI &amp; TCP/IP protocol suite, routing
-                    protocols, virtualization.
-                  </p>
-                </li>
-                <li>
-                  <h3>Other skills</h3>
-                  <p>
-                    UX/UI design, Adobe Illustrator, Adobe XD, fluent in
-                    spanish, great communicator, sales.
-                  </p>
-                </li>
               </ul>
             </div>
           </div>
@@ -413,6 +414,24 @@ class App extends Component {
           </div>
           <div className="skills-port">
             <div id="col-left-portfolio">
+              <h3>AskCharly.ca</h3>
+              <i>
+                A latin business directory for the latin community in Ottawa.
+              </i>
+              <a
+                href="https://askcharly.ca/en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                askcharly.ca/en
+              </a>
+              <ul className="skills-port-ul">
+                <li>Built with React, Typescrpt, NextJS</li>
+                <li>Built back-end api MySQL, NodeJS</li>
+                <li>
+                  Microservice architecture, ChatGPT api to generate content.
+                </li>
+              </ul>
               <h3>React Native App for CBSA.</h3>
               <i>Hosted in private repository.</i>
               <a
@@ -432,99 +451,6 @@ class App extends Component {
                 <li>Built with React Native.</li>
                 <li>Built back-end api with NodeJs, Express.</li>
                 <li>API talks to MongoDB to store and fetch data.</li>
-              </ul>
-              <h3>
-                React JS Website <i>Development in progress</i>
-              </h3>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/guer0157/reactAntoTechWebsite"
-              >
-                <i>Code: </i>https://github.com/guer0157/reactAntoTechWebsite
-              </a>
-              <a
-                onClick={this.showGraphics}
-                id="antotech"
-                className="vid"
-                href="#vid-antotech"
-              >
-                {this.state.showAntotechwireframestext}
-              </a>
-              {this.state.showAntotechwireframes && (
-                <video id="vid-antotech" width="90%" controls autoPlay>
-                  <source
-                    id="antotechweb"
-                    src={require("./assets/MyMovie.mp4")}
-                    type="video/mp4"
-                  />
-                </video>
-              )}
-              <ul className="skills-port-ul">
-                <li>
-                  Implementing react, react-router-dom, reactstrap and
-                  react-redux to create a website.
-                </li>
-                <li>
-                  Coded server-side with Express to communicate with a MongoDB
-                  database.
-                </li>
-                <li>
-                  Designed UI mock-up for the website with Adove XD{" "}
-                  <i>See Video</i>
-                </li>
-              </ul>
-              <h3>IOS Passport Application</h3>
-              <a
-                id="ios"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/guer0157/iosFinal"
-              >
-                https://github.com/guer0157/iosFinal
-              </a>
-              <a
-                href="#ios"
-                onClick={this.showGraphics}
-                id="ios"
-                className="vid"
-              >
-                {this.state.iosfinaltext}
-              </a>
-              {this.state.iosfinal && (
-                <video width="300" height="600" controls autoPlay>
-                  <source
-                    src={require("./assets/iosdevelopment.mov")}
-                    type="video/mp4"
-                  />
-                </video>
-              )}
-              <ul className="skills-port-ul">
-                <li>
-                  Used Swift to develop a passport application to track trips.
-                </li>
-                <li>
-                  Implemented URLSession and URLRequest to make calls to a JSON
-                  API for data.
-                </li>
-              </ul>
-              <h3>Bootstrap Website</h3>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="http://www.cerrajeriaAurrera.com"
-              >
-                http://www.cerrajeriaAurrera.com
-              </a>
-              <ul className="skills-port-ul">
-                <li>
-                  Developed a simple website with bootstrap for a freelance
-                  client.
-                </li>
-                <li>
-                  Completed all parts of the development from design to
-                  deployment.
-                </li>
               </ul>
             </div>
             <div>
@@ -559,31 +485,13 @@ class App extends Component {
                   <i>Try demo above</i>
                 </li>
               </ul>
-              <h3>UI &amp; UX Design</h3>
-              <p onClick={this.showGraphics} id="uiux" className="vid">
-                {this.state.uiuxtext}
-              </p>
-              {this.state.uiux && (
-                <video width="300" height="600" controls autoPlay>
-                  <source src={require("./assets/uiux.mov")} type="video/mp4" />
-                </video>
-              )}
-              <ul className="skills-port-ul">
-                <li>Used Adobe XD to design an interactive visual mock-up.</li>
-                <li>Followed Android UI guidelines.</li>
-                <li>
-                  Followed user-centric design - Research, Prototype, Design, to
-                  create intutive UI
-                </li>
-              </ul>
-
               <h3>BottleWorks Website</h3>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="http://bottleworks.ca"
               >
-                http://bottleworks.ca
+                https://bottleworks.ca
               </a>
               <ul className="skills-port-ul">
                 <li>Did all the JavaScript for the website.</li>
